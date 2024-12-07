@@ -360,6 +360,13 @@ a:hover {
 }
 /* 时间日期框 */
 
+.audio {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+/* 音频居中显示 */
+
 /* 一言&标语 */
 .words {
     color: #448AFF;
