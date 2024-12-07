@@ -98,7 +98,7 @@ a:hover {
     color: white;
     font-size: 16px;
     margin: 0;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
 .nav {
@@ -172,7 +172,7 @@ a:hover {
     border-radius: 10px;
     padding: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 300px;
+    max-width: 350px;
     margin: auto;
 }
 
@@ -230,24 +230,24 @@ a:hover {
 /* 结束 */
 
 /* 主站传统节日表 */
-.holiday-table {
+.cn-table {
     border-collapse: collapse;
     width: 100%;
 }
 
-.holiday-table, 
-.holiday-table th, 
-.holiday-table td {
+.cn-table, 
+.cn-table th, 
+.cn-table td {
     border: 1px solid #000;
 }
 
-.holiday-table th, 
-.holiday-table td {
+.cn-table th, 
+.cn-table td {
     padding: 10px;
     text-align: center;
 }
 
-.holiday-table caption {
+.cn-table caption {
     margin: 10px 0;
 }
 /* 结束 */
@@ -285,7 +285,7 @@ a:hover {
 /* 主站目录 */
 .directory {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding: 10px;
