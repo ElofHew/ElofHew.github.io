@@ -1,0 +1,386 @@
+/* This file is used to style the website */
+
+/* 定义字体 */
+@font-face {
+    font-family: MiSans;
+    src: url(fonts/MiSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Bold;
+    src: url(fonts/MiSans-Semibold.ttf);
+}
+/* 结束 */
+
+/* 定义全局样式 */
+body {
+    background-color: lemonchiffon;
+    margin: 0;
+    padding: 0;
+    font-family: MiSans; 
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 45px;
+    margin: 10px;
+}
+
+@media (min-width: 601px) {
+    body {
+        background-color: lemonchiffon;
+        margin: 0;
+        padding: 0;
+        font-family: MiSans; 
+        background-image: url(img/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 45px;
+        margin: 10px;
+    }
+}
+
+b {
+    font-family: MiSans-Bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: MiSans-Bold;
+}
+
+hr {
+    background-color: #448AFF;
+    max-width: 350px;
+}
+
+details {
+    margin-left: 5px;
+}
+
+details p {
+    color: black;
+}
+
+a, a:visited {
+    color: #00C853;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00e15e;
+    text-decoration: underline;
+}
+/* 结束 */
+
+/* 导航栏 */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #448AFF;
+    height: 50px;
+    z-index: 1000; 
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    margin-right: 20px;
+}
+
+.nav {
+    display: flex;
+    margin-right: 20px;
+}
+
+.nav a {
+    color: white;
+    margin: 0 5px;
+    text-decoration: none;
+}
+/* 结束 */
+
+/* 专门给友链用的 */
+.qqava {
+    object-fit: cover;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.frdlnk-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.frdlnkdivs {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 260px;
+    min-width: 220px;
+    flex: 0 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.fldt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.fldt a {
+    color: #448AFF !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.fldd {
+    margin-left: 10px;
+    color: #555;
+    font-weight: 500;
+}
+
+.fldd p {
+    text-align: left;
+    color: maroon;
+}
+/* 结束 */
+
+/* 主站划分板块 */
+.block-divs {
+    transition: transform 0.5s;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+}
+
+.block-divs:hover {
+    transform: scale(1.02);
+}
+/* 结束 */
+
+/* 主站搜索框 */
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: #fff;
+}
+.search-input {
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 300px;
+}
+.search-button {
+    background-color: #0078D7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+}
+.search-button:hover {
+    background-color: #005a9e;
+}
+/* 结束 */
+
+/* 按钮样式 */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(222, 184, 135);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color:rgb(228, 191, 142);
+}
+/* 结束 */
+
+/* 主站传统节日表 */
+.holiday-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.holiday-table, 
+.holiday-table th, 
+.holiday-table td {
+    border: 1px solid #000;
+}
+
+.holiday-table th, 
+.holiday-table td {
+    padding: 10px;
+    text-align: center;
+}
+
+.holiday-table caption {
+    margin: 10px 0;
+}
+/* 结束 */
+
+/* 按钮/小框居中 */
+.centerpst {
+    text-align: center;
+}
+
+.centerpst .button {
+    color: white;
+    text-decoration: none;
+}
+
+.centerpst .button:hover {
+    color: white;
+}
+/* 结束 */
+
+/* 主站头像 */
+.avatar {
+    transition: transform 1s;
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+    display: block;
+}
+
+.avatar:hover {
+    transform: scale(1.10) rotate(360deg);
+}
+/* 结束 */
+
+/* 主站目录 */
+.directory {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+.directory ul li {
+    text-align: left;
+}
+/* 结束 */
+
+/* 滚动文字 */
+.scroll-pt {
+    text-align: center;
+}
+
+.scroll-text {
+    background-color: rgb(209, 196, 255, 0.8);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: purple;
+    font-size: 14px;
+    height: 30px;
+    max-width: 500px;
+}
+
+.scroll-text p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+/* 结束 */
+
+.body-head {
+    max-width: 300px;
+    margin: auto;
+}
+/* 主站头像部分 */
+
+.main-title {
+    color:#448AFF;
+    text-align: center;
+    margin: auto;
+}
+/* 主标题大字 */
+
+.subtitle {
+    text-align: left;
+    color: #448AFF;
+    font-size: 1.5rem; 
+}
+/* 主站板块小标题 */
+
+.subwords {
+    margin-left: auto;
+    text-align: right;
+}
+/* 主站板块标题下方黑色小字 */
+
+.dttm {
+    color:chocolate;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: #f2f2f2;
+    display: inline-block;
+    text-align: left;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+/* 时间日期框 */
+
+/* 一言&标语 */
+.words {
+    color: #448AFF;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: inline-block; 
+    text-align: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: rgb(209, 243, 255);
+}
+
+.words a, .words a:hover, .words a:visited {
+    display: block;
+    width: 100%;
+    color:coral;
+    text-decoration: none;
+    text-align: center;
+}
+/* 结束 */
+
+/* END */

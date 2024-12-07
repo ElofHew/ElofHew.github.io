@@ -1,0 +1,110 @@
+/* This file is used to style the articles */
+
+@font-face {
+    font-family: MiSans;
+    src: url(../fonts/MiSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: MiSans-Bold;
+    src: url(../fonts/MiSans-Semibold.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: MiSans;
+    background-color: cornsilk;
+    padding-top: 40px;
+    margin: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50;
+    height: 50px;
+    z-index: 1000; 
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content p {
+    color: white; 
+    font-size: 18px; 
+    margin: 0 10px; 
+}
+
+.content {
+    margin-top: 65px;
+    margin-left: 20px; 
+    padding: 15px; 
+}
+
+.title {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.subtitle {
+    text-align: left;
+    color: #448AFF;
+    font-size: 1.5rem; 
+}
+
+.message, .url {
+    font-size: 3rem; 
+    text-align: right;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding: 5px; 
+}
+
+.message {
+    background-color: rgb(209, 243, 255);
+}
+
+.scroll-text {
+    background-color: lightgray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.url {
+    background-color: rgb(255, 238, 170);
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+details {
+    margin-left: 5px;
+}
+
+details p {
+    color: black;
+}
+
+nav a {
+    color: white!important;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+a {
+    color: #00C853;
+}
+
+a:visited {
+    color: #00C853;
+}

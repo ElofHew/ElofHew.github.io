@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<!--神秘网页这不神奇吗-->
+<!--使用源码请告知我，谢谢-->
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="这里是Dan_Evan的神秘网站，欢迎访问！" />
+    <meta name="keywords" content="Dan_Evan,ElofHew,神秘网站,博客,开源项目,哔哩哔哩,Bilibili,B站,GitHub,神秘猜数字小游戏,Python,开源,技术博客,个人网站,个人博客,神秘博客" />
+    <meta name="author" content="Dan_Evan" />
+    <meta name="robots" content="index,follow" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link type="text/css" href="style.css" rel="stylesheet" />
+    <title>Dan_Evan's Website</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <p><b>DE's Website</b></p>
+        </div>
+        <nav class="nav">
+            <a href="https://elofhew.github.io/">主站</a>
+            <a href="https://elofhew.github.io/download.html">下载</a>
+            <a href="https://elofhew.github.io/friendlink.html">友链</a>
+            <a href="https://komlers.github.io/" target="_blank">博客</a>
+        </nav>
+    </div>
+    <div class="scroll-pt">
+        <marquee behavior="scroll" direction="left" class="scroll-text">
+            <p>通知：我现在决定睡觉</p>
+        </marquee>
+    </div>
+    <hr />
+    <div class="body-head">
+        <img src="img/icon.png" class="avatar" alt="Dan_Evan's Avatar" width="130" height="130" />
+        <h1 class="main-title"><b>Dan_Evanの主站</b></h1>
+        <hr align="right" />
+        <div class="subwords">
+            <a href="https://elofhew.github.io/docs/about.html" style="color:gray">(猜你在找) 如何区分我的不同网名?</a>
+        </div>
+    </div>
+    <hr />
+    <div style="background-color: rgba(220, 223, 255, 0.8);" class="block-divs">
+        <div class="centerpst">
+            <div id="time" class="dttm">当前时间：<noscript style="color:red">(请开启JavaScript)</noscript></div>
+            <script src="js/time.js"></script>
+            <div id="date" class="dttm">今天是：<noscript style="color:red">(请开启JavaScript)</noscript></div>
+            <script src="js/date.js"></script>
+            <div class="words">&nbsp;你今天看上去很聪明！！！ :)&nbsp;</div>
+            <div>
+                <p id="hitokoto" style="font-size: 12px;" class="words">
+                    <a href="#" id="hitokoto_text">正在从 一言服务器 获取中...<noscript style="color:red">(请开启JavaScript)</noscript></a>
+                </p>
+                <script src="js/hitokoto.js"></script>
+            </div>
+            <div class="search-box">
+                <input type="text" class="search-input" placeholder="在必应搜索..." id="searchInput">
+                <button class="search-button" onclick="search()"><img src="icons/search.svg" width="20" height="20"></button>
+            </div>
+            <script src="js/search.js"></script>
+        </div>
+    </div>
+    <hr />
+    <!--临时性倒计时-->
+    <div id="countdown" style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs">
+        <p style="color:tan; font-size: 18px; text-align: center;" id ="countdown-text">距离我的生日还有：<noscript style="color:red">(请开启JavaScript)</noscript></p>
+        <script src="js/countdown.js"></script>
+    </div>
+    <!--临时性倒计时-->
+    <hr />
+    <div style="background-color: rgba(251, 255, 220, 0.8);" class="block-divs">
+        <div class="centerpst">
+            <a href="https://elofhew.github.io/" class="button">主站</a>
+            <a href="https://elofhew.github.io/download.html" class="button">下载</a>
+            <a href="https://komlers.github.io/" target="_blank" class="button">博客</a>
+            <a href="https://elofhew.github.io/docs/about.html" class="button">关于我</a>
+            <a href="https://elofhew.github.io/friendlink.html" class="button">友情链接</a>
+            <hr />
+            <details class="directory">
+                <summary>网站目录</summary>
+                <ul>
+                    <li><a href="#contacts">联系方式</a></li>
+                    <li><a href="#about">网站概述</a></li>
+                    <li><a href="#open-source">开源项目</a></li>
+                    <li><a href="#thanks">特别鸣谢</a></li>
+                    <li><a href="#holiday-table">中国传统节日大全表</a></li>
+                    <li><a href="#donate"><s>V我50渐渐石粒</s></a></li>
+                </ul>
+            </details>
+        </div>
+    </div>
+    <hr />
+    <div class="container">
+        <div style="background-color: rgba(255, 232, 243, 0.8);" class="block-divs" id="about">
+            <p style="color:yellowgreen" align="left">
+                <span style="font-size:20; color:lightseagreen;"><b>网站概述：</b></span>
+                <ul>
+                    <li><b>使用字体：</b>MiSans</li>
+                    <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
+                    <li><b>使用工具：</b>VSCode、Github Pages</li>
+                    <li><b>本站网址：</b><a href="https://de.kz.mk">de.kz.mk</a></li>
+                    <li><b>博客网址：</b><a href="https://komlers.github.io/" target="_blank">deb.kz.mk</a><br />(<a href="https://elofhew.github.io/docs/change-blog.html">为什么更换了博客页面?</a>)</li>
+                    <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)<br />(合作/帮助：<a href="https://github.com/Meltide" target="_blank">MeltIce</a>、<a href="https://github.com/minke233" target="_blank">Hanson</a>)</li>
+                </ul>
+            </p>
+        </div>
+        <hr />
+        <div style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs" id="contacts">
+            <p style="color:yellowgreen" align="left">
+                <span style="font-size:20; color:#448AFF;"><b>我的联系方式：</b></span>
+                <ul>
+                    <li><img src ="icons/bilibili.svg" width="15" height="15"> B站：<a href="https://space.bilibili.com/642688364" target="_blank">@Dan_Evan</a></li>
+                    <li><img src ="icons/weibo.svg" width="15" height="15"> 微博：<a href="https://weibo.com/u/5664519001" target="_blank">@Dan_Evan</a></li>
+                    <li><img src ="icons/github.svg" width="15" height="15"> GitHub：<a href="https://github.com/ElofHew" target="_blank">@ElofHew</a></li>
+                    <li><img src ="icons/qq1.svg" width="15" height="15"> 我的QQ群聊：<a href="https://qm.qq.com/q/HbR499HcsK">927441490</a></li>
+                    <li><img src ="icons/qq2.svg" width="15" height="15"> QQ：<a href="https://qm.qq.com/q/BPdpfotZgQ" target="_blank">@Dr.Evan.</a></li>
+                    <li><img src ="icons/weixin.svg" width="15" height="15"> 微信：<a href="./img/mmqrcode.png" target="_blank">@Evan.</a></li>
+                    <li><img src ="icons/telegram.svg" width="15" height="15"> Telegram(需要代理)：<a href="https://t.me/ElofHew" target="_blank">@ElofHew</a></li>
+                    <li><img src ="icons/email1.svg" width="15" height="15"> Email(1)：<a href="mailto:dan_evan233@outlook" target="_blank">dan_evan233@outlook</a></li>
+                    <li><img src ="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com" target="_blank">2352235176@qq.com</a></li>
+                </ul>
+            </p>
+        </div>
+        <hr />
+        <div style="background-color: rgba(255, 240, 200, 0.8);" class="block-divs">
+            <!--计数器，编辑开预览的时候请暂时删去-->
+            <p style="color:gray" align="center"><span style="font-size:15;">↓ 神秘网页访问次数计数器 ↓</span></p>
+            <center><img src="https://count.himiku.com/get/@ElofHew?theme=rule34" width="260" /></center>
+        </div>
+        <hr />
+        <div>  
+        </div>
+        <div style="background-color: rgba(238, 255, 214, 0.8);" class="block-divs" id="open-source">
+            <details open>
+                <p align="left"><summary><b>神秘开源项目</b><br /></summary></p>
+                <h4 align="center" style="color:#448AFF; margin: 5px 0;" class="subtitle">神秘开源项目</h4>
+                    <summary><p align="left" style="color:maroon">我的开源项目(By ElofHew)</p></summary>
+                    <ul>
+                        <li><img src ="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/DE_numguess" target="_blank">神秘猜数字小游戏 - By ElofHew</a><br /></li>
+                    </ul>
+                    <summary><p align="left" style="color:maroon">其他朋友的开源项目</p></summary>
+                    <ul>
+                        <li><img src ="icons/python.svg" width="15" height="15"> <a href="https://github.com/minqwq/pyos-improved" target="_blank">PYOS-Improved - By minqwq</a><br /></li>
+                        <li><img src ="icons/python.svg" width="15" height="15"> <a href="https://github.com/minqwq/minqwq-life" target="_blank">minqwq-Life - By minqwq</a><br /></li>
+                        <li><img src ="icons/python.svg" width="15" height="15"> <a href="https://github.com/Meltide/mpga-pyos" target="_blank">MPGA-PYOS - By MeltIce</a><br /></li>
+                        <li><img src ="icons/c.svg" width="15" height="15"> <a href="https://github.com/Meltide/c-os" target="_blank">C-OS - By MeltIce</a><br /></li>
+                        <li><img src ="icons/php.svg" width="15" height="15"> <a href="https://github.com/Meltide/ServerHelper" target="_blank">ServerHelper - By MeltIce</a><br /></li>
+                    </ul>
+            </details>
+        </div>
+    </div>
+    <hr />
+    <div class="container">
+        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="donate">
+            <details>
+                <p align="left"><summary><b><s>V我50渐渐石粒</s></b></summary></p>
+                <h4 align="center" style="color:#448AFF; margin: 5px 0;" class="subtitle">赞助我？</h4>
+                <ul> 
+                    <li><details><summary>微信支付</summary>
+                        <img src="img/wx.png" alt="微信支付" width="200" />
+                        </details></li>
+                    <li><details><summary>支付宝</summary>
+                        <img src="img/zfb.jpg" alt="支付宝" width="200" />
+                        </details></li>
+                    <li><details><summary>QQ钱包</summary>
+                        <img src="img/qq.png" alt="QQ钱包" width="200" />
+                        </details></li>
+                </ul>
+                <p>(微信支付、支付宝、QQ钱包均可)</p>
+                <p>(你可以右键查看原图保存后识别)</p>
+                <p>本人表示衷心感谢！<img src="icons/emoji3.png" alt="🤓" width="20" height="20" /><img src="icons/emoji1.png" alt="👍" width="20" height="20" /></p>
+                <hr />
+                <h3 align="center" style="margin: 5px 0;margin-bottom: 10px;" class="subtitle">赞助列表：</h3>
+                <ul>
+                    <li>暂无 :(</li>
+                </ul>
+            </details>
+        </div>
+        <hr />
+        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="thanks">
+            <details>
+                <p align="left"><summary><b>特别鸣谢</b></summary></p>
+                <h4 align="center" style="color:#448AFF; margin: 5px 0;" class="subtitle">特别鸣谢</h4>
+                <hr />
+                <h3><a href="https://github.com/Meltide" target="_blank">MeltIce</a>为本主站做出的贡献：</h3>
+                <p>
+                    <ol style="color : #6A0CAD;">
+                        <li>为本站添加了柔和配色，更贴合背景颜色</li>
+                        <li>提供了头像旋转动画<br />(鼠标悬停或者触屏点击头像即可看到旋转动画)</li>
+                        <li>提供折叠菜单思路，并实现了折叠菜单。</li>
+                        <li>优化了部分界面</li>
+                    </ol>
+                </p>
+                <h3><a href="https://github.com/minke233" target="_blank">Hanson</a>为本主站做出的贡献：</h3>
+                <p>
+                    <ol style="color : #6A0CAD;">
+                        <li>为本站提供了新域名：<a href="de.kz.mk">de.kz.mk</a></li>
+                        <li>为本站提供了相关技术支持</li>
+                        <li>为本站提供了虚拟ICP备案号</li>
+                        <li>网站代理至CloudFlare</li>
+                    </ol>
+                </p>
+            </details>
+        </div>
+        <hr />       
+        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="holiday-table">
+            <details>
+                <p align="left"><summary><b>中国传统节日大全表</b></summary></p>
+                <table class="holiday-table">
+                    <caption><strong>中国传统节日大全表</strong></caption>
+                    <tbody>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center"><strong>节日</strong></td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center"><strong>时间</strong></td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">春节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历正月初一</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">元宵节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历正月十五</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">龙抬头</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历二月初二</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">上巳节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历三月初三</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">寒食节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">清明前一天</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">清明节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">公历4月5日前后</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">端午节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历五月初五</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">七夕节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历七月初七</td>
+                        </tr>
+                        <tr>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">中元节</td>
+                            <td width="635" valign="middle" style="word-break: break-all;" align="center">农历七月十五</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">中秋节</td>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">农历八月十五</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">重阳节</td>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">农历九月初九</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">寒衣节</td>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">农历十月初一</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">下元节</td>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">农历十月十五</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">冬至节</td>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">公历12月21日前后</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">腊八节</td>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">农历腊月初八</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">小年</td>
+                            <td valign="middle" colspan="1" rowspan="1" align="center" style="word-break: break-all;">农历腊月二十三</td>
+                        </tr>
+                        <tr>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">除夕</td>
+                            <td valign="middle" colspan="1" rowspan="1" style="word-break: break-all;" align="center">农历腊月最后一天</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+        </div>
+    </div>
+    <hr />
+    <div>
+        <p style="color:gray" align="center">
+            本网站由<a href="https://github.com/ElofHew" target="_blank">ElofHew</a>使用<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>搭建<br />           
+            <a href="https://icp.gov.moe/?keyword=20240312" target="_blank">萌ICP备20240312号</a><br />
+            <a href="https://icp.cab/beian/ICP-2024110061.html" target="_blank">菜包2024110061号</a><br />
+            <a href="http://icp.im/beian/ICP-2024110091.html" target="_blank">酱2024110091号</a><br />
+            © Dan_Evan 2024 All rights reserved.
+        </p>
+    </div>
+</body>
+</html>
