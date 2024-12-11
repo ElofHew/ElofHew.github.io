@@ -62,6 +62,10 @@ details p {
     color: black;
 }
 
+summary {
+    outline: none;
+}
+
 a, a:visited {
     color: #00C853;
     text-decoration: none;
