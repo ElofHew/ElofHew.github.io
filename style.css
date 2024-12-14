@@ -371,6 +371,13 @@ a:hover {
 }
 /* 音频居中显示 */
 
+.video {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+/* 视频居中显示 */
+
 /* 一言&标语 */
 .words {
     color: #448AFF;
