@@ -15,8 +15,35 @@ body {
     padding: 0;
     font-family: MiSans;
     background-color: cornsilk;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     padding-top: 40px;
-    margin: 10px;
+    margin: 0 10px;
+}
+
+@media (min-width: 601px) {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: MiSans;
+        background-color: cornsilk;
+        background-image: url(../img/bg2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        padding-top: 40px;
+        margin: 0 10px;
+    }
+}
+
+.block-divs {
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
 }
 
 .header {
@@ -24,12 +51,13 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #4CAF50;
+    background-color: #448AFF;
     height: 50px;
     z-index: 1000; 
     color: white;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 20px;
 }
 
@@ -39,38 +67,21 @@ body {
 }
 
 .header-content p {
-    color: white; 
-    font-size: 18px; 
-    margin: 0 10px; 
+    color: white;
+    font-size: 16px;
+    margin: 0;
+    margin-right: 30px;
 }
 
-.content {
-    margin-top: 65px;
-    margin-left: 20px; 
-    padding: 15px; 
+.nav {
+    display: flex;
+    margin-right: 30px;
 }
 
-.title {
-    text-align: right;
-    margin-right: 10px;
-}
-
-.subtitle {
-    text-align: left;
-    color: #448AFF;
-    font-size: 1.5rem; 
-}
-
-.message, .url {
-    font-size: 3rem; 
-    text-align: right;
-    margin-right: 10px;
-    border-radius: 10px;
-    padding: 5px; 
-}
-
-.message {
-    background-color: rgb(209, 243, 255);
+.nav a {
+    color: white!important;
+    margin: 0 5px!important;
+    text-decoration: none!important;
 }
 
 .scroll-text {
@@ -80,11 +91,24 @@ body {
     align-items: center;
 }
 
-.url {
-    background-color: rgb(255, 238, 170);
-    min-height: 30px;
-    display: flex;
-    align-items: center;
+.content {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+b {
+    font-family: MiSans-Bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: MiSans-Bold;
+}
+
+hr {
+    background-color: #448AFF;
 }
 
 details {
@@ -95,16 +119,16 @@ details p {
     color: black;
 }
 
-nav a {
-    color: white!important;
-    margin: 0 5px;
+summary {
+    outline: none;
+}
+
+a, a:visited {
+    color: #00C853;
     text-decoration: none;
 }
 
-a {
-    color: #00C853;
-}
-
-a:visited {
-    color: #00C853;
+a:hover {
+    color: #00e15e;
+    text-decoration: underline;
 }
