@@ -23,7 +23,6 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-top: 45px;
-    margin: 10px;
 }
 
 @media (min-width: 601px) {
@@ -37,7 +36,6 @@ body {
         background-position: center;
         background-attachment: fixed;
         padding-top: 45px;
-        margin: 10px;
     }
 }
 
@@ -101,6 +99,8 @@ a:hover {
 .header-content p {
     color: white;
     font-size: 16px;
+    margin: 0;
+    margin-right: 30px;
 }
 /* 结束 */
 
