@@ -23,7 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-top: 45px;
-    margin: 10px;
+    margin: 10px 0;
 }
 
 @media (min-width: 601px) {
@@ -37,7 +37,7 @@ body {
         background-position: center;
         background-attachment: fixed;
         padding-top: 45px;
-        margin: 10px;
+        margin: 10px 0;
     }
 }
 
@@ -83,14 +83,15 @@ a:hover {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #448AFF;
     height: 50px;
-    z-index: 1000; 
+    background-color: #448AFF;
+    z-index: 1000;
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .header-content {
@@ -101,19 +102,84 @@ a:hover {
 .header-content p {
     color: white;
     font-size: 16px;
-    margin: 0;
     margin-right: 20px;
 }
 
 .nav {
     display: flex;
-    margin-right: 30px;
 }
 
-.nav a {
+.nav p {
     color: white;
     margin: 0 5px;
+}
+/* 结束 */
+
+/* 底部导航栏 */
+.footer-prt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    text-align: center;
+    height: 40px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: bottom 0.3s ease;
+    z-index: 1000;
+}
+
+.footer a {
+    transition: transform 0.5s;
+    color: white;
     text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+/* 结束 */
+
+/* 专门给音乐室用的 */
+.music-divs {
+    transition: transform 0.5s;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+    background-color: rgba(202, 247, 230, 0.4);
+}
+
+.music-divs:hover {
+    transform: scale(1.02);
+}
+
+.music-divs p {
+    color:cornflowerblue;
+    text-align: center;
+
+}
+
+.music-divs p b {
+    color:sandybrown;
+    font-size: 18px;
 }
 /* 结束 */
 
@@ -271,6 +337,15 @@ a:hover {
 }
 /* 结束 */
 
+/* 主站表格统一样式 */
+th, td {
+    width: 635px;
+    vertical-align: middle;
+    word-break: break-all;
+    text-align: center;
+}
+/* 结束 */
+
 /* 主站头像 */
 .avatar {
     transition: transform 1s;
@@ -323,6 +398,13 @@ a:hover {
     display: inline;
 }
 /* 结束 */
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* iframe居中 */
 
 .body-head {
     max-width: 300px;
