@@ -23,6 +23,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     padding-top: 45px;
+    margin: 0 10px;
 }
 
 @media (min-width: 601px) {
@@ -36,6 +37,7 @@ body {
         background-position: center;
         background-attachment: fixed;
         padding-top: 45px;
+        margin: 0 10px;
     }
 }
 
