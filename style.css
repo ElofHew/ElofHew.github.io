@@ -106,6 +106,12 @@ a:hover {
 }
 /* 结束 */
 
+.about-div {
+    text-align: center;
+    color:gray;
+}
+/* 底部关于信息 */
+
 /* 底部导航栏 */
 .footer-prt {
     display: flex;
@@ -118,7 +124,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: fixed;
-    bottom: 10px;
+    bottom: 5px;
     left: 50%;
     transform: translateX(-50%);
     max-width: 400px;
@@ -171,6 +177,74 @@ a:hover {
 .music-divs p b {
     color:sandybrown;
     font-size: 18px;
+}
+/* 结束 */
+
+/* 专门给游戏中心用的 */
+.game-divs {
+    transition: transform 0.5s;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+    background-color: rgba(184, 198, 255, 0.4);
+}
+
+.game-divs:hover {
+    transform: scale(1.02);
+}
+
+.game-divs h2 {
+    color:rgb(164, 89, 255);
+    text-align: center;
+}
+
+.game-divs p {
+    color:rgb(70, 135, 255);
+    text-align: center;
+}
+
+.help-div {
+    transition: transform 0.5s;
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+    background-color: rgba(184, 255, 233, 0.4);
+}
+
+.game-content {
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+    background-color: rgba(190, 255, 184, 0.4);
+    color:#555;
+}
+
+.game-content h4 {
+    font-size: 18px;
+    color: #448AFF;
+}
+
+.game-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.divcut {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 180px;
+    text-align: left;
+    margin: auto;
 }
 /* 结束 */
 
@@ -239,6 +313,11 @@ a:hover {
 
 .block-divs:hover {
     transform: scale(1.02);
+}
+
+.block-divs h2 {
+    font-size:20; 
+    color:lightseagreen;
 }
 /* 结束 */
 
@@ -406,7 +485,7 @@ th, td {
 .main-title {
     color:#448AFF;
     text-align: center;
-    margin: auto;
+    margin: 10px 0;
 }
 /* 主标题大字 */
 
