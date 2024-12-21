@@ -18,7 +18,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: MiSans; 
-    background-image: url(img/bg1.jpg);
+    background-image: url(https://elofhew.github.io/img/bg1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -32,7 +32,7 @@ body {
         margin: 0;
         padding: 0;
         font-family: MiSans; 
-        background-image: url(img/bg2.jpg);
+        background-image: url(https://elofhew.github.io/img/bg2.jpg);
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
