@@ -90,19 +90,13 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 0;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-}
-
-.header-content p {
+.header p {
     color: white;
     font-size: 16px;
     margin: 0;
-    margin-right: 30px;
 }
 /* 结束 */
 
@@ -468,6 +462,16 @@ th, td {
     display: inline;
 }
 /* 结束 */
+
+#countdown {
+    text-align: center;
+}
+
+#countdown p {
+    color:tan; font-size: 18px;
+    text-align: center;
+}
+/* 倒计时 */
 
 .iframe-container {
     display: flex;

@@ -1,6 +1,6 @@
 // Countdown
 
-const targetDate = new Date("December 25, 2024 00:00:00").getTime();
+const targetDate = new Date("Januaury 1, 2025 00:00:00").getTime();
 
 function updateCountdown() {
     const currentDate = new Date().getTime();
@@ -10,11 +10,12 @@ function updateCountdown() {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
     
-    document.getElementById("countdown-text").innerHTML = `距离圣诞节还有：<br /><span style="color: tan;">${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒</span>`;
+    document.getElementById("countdown-text").innerHTML = `距离2025年还有：<br /><span style="color: tan;">${days}天 ${hours}小时 ${minutes}分钟 ${seconds}秒</span>`;
 
     if (distance < 0) {
         clearInterval(countdownInterval);
-        document.getElementById("countdown").innerHTML = `<b style="color: orangered;">圣诞节快乐！</b>`;
+        document.getElementById("countdown-text").innerHTML = `<b style="color: orangered;
+    text-align: center;">2025年，新年快乐！</b>`;
     }
 }
 
