@@ -14,14 +14,19 @@
     <link type="text/css" href="style.css" rel="stylesheet" />
     <title>主站 - Dan_Evan's Website</title>
 </head>
-<body>
+<body style="padding-top: 40px;">
     <script src="js/click_effect.js"></script>
     <div class="header">
         <p><b>Dan_Evan's Website</b></p>
     </div>
+    <div class="notice-pt">
+        <marquee behavior="scroll" direction="left" class="notice-text">
+            <p>通知：新域名：drevan.xyz → www.drevan.xyz</p>
+        </marquee>
+    </div>
     <div class="scroll-pt">
         <marquee behavior="scroll" direction="left" class="scroll-text">
-            <p>通知：我现在决定睡觉</p>
+            <p>2024转眼就要过去了……时间过得太快了……</p>
         </marquee>
     </div>
     <hr />
@@ -38,17 +43,18 @@
         <details>
             <summary style="text-align: center"><b>域名说明</b></summary>
             <ul>
-                <li><b>本站域名：</b>drevan.xyz<br /><b>永久域名：</b>elofhew.github.io</li>
+                <li><b>本站域名：</b>www.drevan.xyz</li>
+                <li><b>永久域名：</b>elofhew.github.io</li>
                 <li><b>本站曾用域名(均已弃用)：</b>de233.us.kg、devan.us.kg、de.kz.mk</li>
             </ul>
         </details>
         <hr style="margin: 10px 50px;" />
-        <details open>
-            <summary style="text-align: center;"><b>公告</b></summary>
-                <h2 style="text-align: center; color: red; margin: 10px 0;">公告</h2>
+        <details>
+            <summary style="text-align: center; color: red;"><b>公告</b></summary>
                 <ul>
-                    <li><b>2024.12.27</b><br />本站域名由de233.us.kg转移至drevan.xyz（<a href="http://drevan.xyz/Blogs/post/us.kg-mian-fei-yu-ming-ke-neng-bu-zai-wen-ding.html" target="_blank">为什么?</a>）</li>
-                    <li><b>2024.12.25</b><br />孩子们，圣诞快乐</li>
+                    <li><details><summary><b>2024.12.28</b></summary>新的起始页已上线→<a href="https://komlers.github.io/" target="_blank">drevan.xyz</a></details></li>
+                    <li><details><summary><b>2024.12.27</b></summary>本站域名由de233.us.kg转移至www.drevan.xyz（<a href="http://elofhew.github.io/Blogs/post/us.kg-mian-fei-yu-ming-ke-neng-bu-zai-wen-ding.html" target="_blank">为什么?</a>）</details></li>
+                    <li><details><summary><b>2024.12.25</b></summary>孩子们，圣诞快乐</details></li>
                 </ul>
         </details>
     </div>
@@ -79,10 +85,16 @@
         <p style="color:cornflowerblue; text-align: center;">梨冻紧、Wiz_H张子豪<br /><b style="color:sandybrown;">罗生门（Follow）</b></p>
         <div class="audio">
             <audio controls>
-                <source src="audio/audio1.mp3" type="audio/mpeg">
+                <source src="https://elofhew.github.io/WEB/audio/audio1.mp3" type="audio/mpeg">
                 你的浏览器不支持音频播放。
             </audio>
         </div>
+    </div>
+    <hr />
+    <div style="background-color: rgba(255, 240, 200, 0.8);" class="block-divs">
+        <!--计数器，编辑开预览的时候请暂时删去-->
+        <p style="color:gray" align="center"><span style="font-size:15px;">↓ 神秘网页访问次数计数器 ↓</span></p>
+        <center><img src="https://count.himiku.com/get/@ElofHew?theme=rule34" width="260" /></center>
     </div>
     <hr />
     <!--临时性倒计时-->
@@ -96,21 +108,20 @@
     <div style="background-color: rgba(251, 255, 220, 0.8);" class="block-divs">
         <div class="centerpst">
             <a href="https://elofhew.github.io/" class="button">主站</a>
-            <a href="https://elofhew.github.io/download.html" class="button">下载</a>
+            <a href="https://elofhew.github.io/download.html" class="button">下载站</a>
             <a href="https://elofhew.github.io/Blogs/" target="_blank" class="button">博客</a>
-            <a href="https://elofhew.github.io/docs/about.html" class="button">关于我</a>
-            <a href="https://elofhew.github.io/friendlink.html" class="button">友情链接</a>
+            <a href="https://elofhew.github.io/music.html" class="button">音乐室</a>
+            <a href="https://elofhew.github.io/friendlink.html" class="button">友链</a>
+            <a href="https://elofhew.github.io/game.html" class="button">小游戏</a>
             <hr />
             <details class="directory">
                 <summary>网站目录</summary>
                 <ul>
-                    <li><a href="#contacts">联系方式</a></li>
                     <li><a href="#about">网站概述</a></li>
+                    <li><a href="#contacts">联系方式</a></li>
                     <li><a href="#open-source">开源项目</a></li>
                     <li><a href="#thanks">特别鸣谢</a></li>
-                    <li><a href="#holiday-table">中国传统节日大全表</a></li>
-                    <li><a href="#24-table">24节气大全表</a></li>
-                    <li><a href="#sh-table">社会主义核心价值观</a></li>
+                    <li><a href="#sheets">各种常用表格</a></li>
                     <li><a href="#donate"><s>V我50渐渐石粒</s></a></li>
                 </ul>
             </details>
@@ -125,8 +136,8 @@
                     <li><b>使用字体：</b>MiSans</li>
                     <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
                     <li><b>使用工具：</b>VSCode、Github Pages</li>
-                    <li><b>本站网址：</b><a href="https://drevan.xyz">drevan.xyz</a></li>
-                    <li><b>博客网址：</b><a href="https://blog.drevan.xyz/" target="_blank">blog.drevan.xyz</a></li>
+                    <li><b>本站网址：</b><a href="https://www.drevan.xyz">www.drevan.xyz</a></li>
+                    <li><b>博客网址：</b><a href="https://www.drevan.xyz/Blogs/" target="_blank">www.drevan.xyz/Blogs</a></li>
                     <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)<br />(合作/帮助：<a href="https://github.com/Meltide" target="_blank">MeltIce</a>、<a href="https://github.com/mkznb" target="_blank">Hanson</a>)</li>
                 </ul>
             </p>
@@ -147,12 +158,6 @@
                     <li><img src="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com" target="_blank">2352235176@qq.com</a></li>
                 </ul>
             </p>
-        </div>
-        <hr />
-        <div style="background-color: rgba(255, 240, 200, 0.8);" class="block-divs">
-            <!--计数器，编辑开预览的时候请暂时删去-->
-            <p style="color:gray" align="center"><span style="font-size:15px;">↓ 神秘网页访问次数计数器 ↓</span></p>
-            <center><img src="https://count.himiku.com/get/@ElofHew?theme=rule34" width="260" /></center>
         </div>
         <hr />
         <div style="background-color: rgba(238, 255, 214, 0.8);" class="block-divs" id="open-source">
@@ -237,6 +242,7 @@
             </details>
         </div>
         <hr />
+        <div id="sheets">
         <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="holiday-table">
             <details>
                 <summary><b>中国传统节日大全表</b></summary>
@@ -324,6 +330,7 @@
                 </table>
             </details>
         </div>
+    </div>
     </div>
     <hr />
     <div class="about-div">

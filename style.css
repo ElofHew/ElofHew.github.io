@@ -2,12 +2,12 @@
 
 /* 定义字体 */
 @font-face {
-    font-family: MiSans;
+    font-family: "MiSans";
     src: url(fonts/MiSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: MiSans-Bold;
+    font-family: "MiSans-Bold";
     src: url(fonts/MiSans-Semibold.ttf);
 }
 /* 结束 */
@@ -17,7 +17,7 @@ body {
     background-color: lemonchiffon;
     margin: 0;
     padding: 0;
-    font-family: MiSans; 
+    font-family: "MiSans"; 
     background-image: url(img/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ body {
         background-color: lemonchiffon;
         margin: 0;
         padding: 0;
-        font-family: MiSans; 
+        font-family: "MiSans"; 
         background-image: url(img/bg2.jpg);
         background-size: cover;
         background-position: center;
@@ -42,11 +42,11 @@ body {
 }
 
 b {
-    font-family: MiSans-Bold;
+    font-family: "MiSans-Bold";
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: MiSans-Bold;
+    font-family: "MiSans-Bold";
 }
 
 hr {
@@ -463,6 +463,32 @@ th, td {
 }
 /* 结束 */
 
+/* 顶部通知 */
+.notice-pt {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.notice-text {
+    font-family: "Misans-Bold";
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    display: inline-flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    height: 30px;
+    max-width: 500px;
+}
+
+.notice-text p {
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+/* 结束 */
+
+/* 倒计时 */
 #countdown {
     text-align: center;
 }
@@ -471,7 +497,7 @@ th, td {
     color:tan; font-size: 18px;
     text-align: center;
 }
-/* 倒计时 */
+/* 结束 */
 
 .iframe-container {
     display: flex;
