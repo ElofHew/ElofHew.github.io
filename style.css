@@ -2,13 +2,13 @@
 
 /* 定义字体 */
 @font-face {
-    font-family: "MiSans";
-    src: url(fonts/MiSans-Regular.ttf);
+    font-family: "MiSans Regular";
+    src: url(https://elofhew.github.io/WEB/fonts/MiSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: "MiSans-Bold";
-    src: url(fonts/MiSans-Semibold.ttf);
+    font-family: "MiSans Semibold";
+    src: url(https://elofhew.github.io/WEB/fonts/MiSans-Semibold.ttf);
 }
 /* 结束 */
 
@@ -17,7 +17,7 @@ body {
     background-color: lemonchiffon;
     margin: 0;
     padding: 0;
-    font-family: "MiSans"; 
+    font-family: "MiSans Regular"; 
     background-image: url(img/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -31,7 +31,7 @@ body {
         background-color: lemonchiffon;
         margin: 0;
         padding: 0;
-        font-family: "MiSans"; 
+        font-family: "MiSans Regular"; 
         background-image: url(img/bg2.jpg);
         background-size: cover;
         background-position: center;
@@ -42,11 +42,11 @@ body {
 }
 
 b {
-    font-family: "MiSans-Bold";
+    font-family: "MiSans Semibold";
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "MiSans-Bold";
+    font-family: "MiSans Semibold";
 }
 
 hr {
@@ -470,7 +470,7 @@ th, td {
 }
 
 .notice-text {
-    font-family: "Misans-Bold";
+    font-family: "MiSans Semibold";
     background-color: rgb(255, 0, 0);
     border-radius: 10px;
     display: inline-flex;

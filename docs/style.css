@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: MiSans;
-    src: url(../fonts/MiSans-Regular.ttf);
+    src: url(../https://elofhew.github.io/WEB/fonts/MiSans-Regular.ttf);
 }
 
 @font-face {
-    font-family: MiSans-Bold;
-    src: url(../fonts/MiSans-Semibold.ttf);
+    font-family: MiSans Semibold;
+    src: url(../https://elofhew.github.io/WEB/fonts/MiSans-Semibold.ttf);
 }
 
 body {
@@ -100,11 +100,11 @@ footer {
 }
 
 b {
-    font-family: MiSans-Bold;
+    font-family: MiSans Semibold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: MiSans-Bold;
+    font-family: MiSans Semibold;
 }
 
 hr {
