@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: MiSans;
-    src: url(../https://elofhew.github.io/WEB/fonts/MiSans-Regular.ttf);
+    src: url("https://elofhew.github.io/WEB/fonts/MiSans-Regular.ttf");
 }
 
 @font-face {
     font-family: MiSans Semibold;
-    src: url(../https://elofhew.github.io/WEB/fonts/MiSans-Semibold.ttf);
+    src: url("https://elofhew.github.io/WEB/fonts/MiSans-Semibold.ttf");
 }
 
 body {
