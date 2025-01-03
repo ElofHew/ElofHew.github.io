@@ -3,12 +3,12 @@
 /* 定义字体 */
 @font-face {
     font-family: "MiSans Regular";
-    src: url("https://elofhew.github.io/WEB/fonts/MiSans-Regular.ttf");
+    src: url(fonts/MiSans-Regular.ttf);
 }
 
 @font-face {
     font-family: "MiSans Semibold";
-    src: url("https://elofhew.github.io/WEB/fonts/MiSans-Semibold.ttf");
+    src: url(fonts/MiSans-Semibold.ttf);
 }
 /* 结束 */
 
