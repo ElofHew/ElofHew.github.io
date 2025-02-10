@@ -295,6 +295,21 @@ a:hover {
 }
 /* 结束 */
 
+/* 专门给小说库用的 */
+.novel-list-divs {
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+}
+
+.novel-list-divs h2 {
+    font-size:20; 
+    color:lightseagreen;
+}
+/* 结束 */
+
 /* 主站划分板块 */
 .block-divs {
     transition: transform 0.5s;
