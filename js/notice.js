@@ -2,6 +2,7 @@
 
 document.getElementById('notice').innerHTML = `
 <ul>
+    <li><details><summary><b>2025.03.08</b></summary>《星尘之子》小说第二卷上线</details></li>
     <li><details><summary><b>2025.02.22</b></summary>大部分需要动态更新的信息内容已改用链接JavaScript方式展现，请务必开启JavaScript以正常浏览本站！</details></li>
     <li><details><summary><b>2025.02.12</b></summary>《星尘之子》小说第一卷上线</details></li>
     <li><details><summary><b>2025.02.05</b></summary>捐赠页面重新设计</details></li>
