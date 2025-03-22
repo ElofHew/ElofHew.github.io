@@ -52,7 +52,7 @@ body {
     left: 0;
     width: 100%;
     background-color: #448AFF;
-    height: 50px;
+    height: 40px;
     z-index: 1000; 
     color: white;
     display: flex;
@@ -109,6 +109,7 @@ h1, h2, h3, h4, h5, h6 {
 
 hr {
     background-color: #448AFF;
+    max-width: 600px;
 }
 
 details {
@@ -131,4 +132,37 @@ a, a:visited {
 a:hover {
     color: #00e15e;
     text-decoration: underline;
+}
+
+.pic_tip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 101, 101);
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.heze2024_1 p {
+    text-align: center;
+}
+
+.heze2024_3 p {
+    text-align: center;
+}
+
+.heze2024 {
+    border-radius: 10px;
+    padding: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 350px;
+    margin: auto;
+}
+
+.heze2024 img {
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 7px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
