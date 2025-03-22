@@ -46,6 +46,37 @@ body {
     margin: auto;
 }
 
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(222, 184, 135);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.button:hover {
+    background-color:rgb(228, 191, 142);
+}
+
+.centerpst {
+    text-align: center;
+}
+
+.centerpst .button {
+    color: white;
+    text-decoration: none;
+}
+
+.centerpst .button:hover {
+    color: white;
+}
+
 .header {
     position: fixed;
     top: 0;
