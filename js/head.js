@@ -1,7 +1,22 @@
-// notice
+// pin
+document.getElementById("pin-top").innerHTML = `
+<p>菏泽信息技术考试练习系统安装详解<br /><a href="docs/2024heze.html" target="_blank"><b>点我跳转</b></a></p>
+`;
 
+// top
+document.getElementById("head-top").innerHTML = `
+<p>春暖花开的季节，一切都将迎来美好的明天。</p>
+`;
+
+// warn
+document.getElementById("warn-top").innerHTML = `
+<p>通知： 新域名：http://www.drevan.xyz/</p>
+`;
+
+// notice
 document.getElementById('notice').innerHTML = `
 <ul>
+    <li><details><summary><b>2025.03.29</b></summary>JavaScript整理</details></li>
     <li><details><summary><b>2025.03.08</b></summary>《星尘之子》小说第二卷上线</details></li>
     <li><details><summary><b>2025.02.22</b></summary>大部分需要动态更新的信息内容已改用链接JavaScript方式展现，请务必开启JavaScript以正常浏览本站！</details></li>
     <li><details><summary><b>2025.02.12</b></summary>《星尘之子》小说第一卷上线</details></li>
