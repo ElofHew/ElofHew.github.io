@@ -182,12 +182,24 @@ a:hover {
     text-align: center;
 }
 
+.heze2024_0 {
+    border-radius: 10px;
+    padding: 12px;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    margin: auto;
+    background-color: rgba(255, 240, 160, 0.8);
+}
+
 .heze2024 {
     border-radius: 10px;
     padding: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 350px;
+    max-width: 500px;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 .heze2024 img {
