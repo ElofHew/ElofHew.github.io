@@ -1,8 +1,3 @@
-// pin
-document.getElementById("pin-top").innerHTML = `
-<p>菏泽信息技术考试练习系统安装详解<br /><a href="docs/2024heze.html" target="_blank"><b>点我跳转</b></a></p>
-`;
-
 // top
 document.getElementById("head-top").innerHTML = `
 <p>春暖花开的季节，一切都将迎来美好的明天。</p>
