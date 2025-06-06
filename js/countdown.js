@@ -1,6 +1,6 @@
 // Countdown
 
-const targetDate = new Date("June 12, 2025 00:00:00").getTime();
+const targetDate = new Date("June 13, 2025 00:00:00").getTime();
 
 function updateCountdown() {
     const currentDate = new Date().getTime();
