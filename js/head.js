@@ -1,20 +1,20 @@
 // top
 document.getElementById("head-top").innerHTML = `
-<p>春暖花开的季节，一切都将迎来美好的明天。</p>
+<p>是的孩子们，<a href="https://ek457.github.io/" target="_blank">OakStudio</a> 推出了超级强的Python伪系统：<a href="https://ek457.github.io/qos/" target="_blank">Quarter OS</a></p>
 `;
 
 // warn
 document.getElementById("warn-top").innerHTML = `
-<p>通知： 新域名：http://www.drevan.xyz/</p>
+<p>通知：域名即将过期，请牢记永久域名：elofhew.github.io</p>
 `;
 
 // notice
 document.getElementById('notice').innerHTML = `
 <ul>
+    <li><details><summary><b>2025.07.28</b></summary>想起来收拾网站了，更换MiSans字体调用方式，使加载速度更快</details></li>
+    <li><details><summary><b>2025.04.18</b></summary>新增菏泽初中信息技术考试练习程序安装教程</details></li>
     <li><details><summary><b>2025.03.29</b></summary>JavaScript整理</details></li>
-    <li><details><summary><b>2025.03.08</b></summary>《星尘之子》小说第二卷上线</details></li>
     <li><details><summary><b>2025.02.22</b></summary>大部分需要动态更新的信息内容已改用链接JavaScript方式展现，请务必开启JavaScript以正常浏览本站！</details></li>
-    <li><details><summary><b>2025.02.12</b></summary>《星尘之子》小说第一卷上线</details></li>
     <li><details><summary><b>2025.02.05</b></summary>捐赠页面重新设计</details></li>
     <li><details><summary><b>2025.01.29</b></summary>春节快乐！</details></li>
     <li><details><summary><b>2025.01.11</b></summary>修复部分显示错误</details></li>

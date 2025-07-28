@@ -1,15 +1,5 @@
 /* This file is used to style the articles */
 
-@font-face {
-    font-family: MiSans;
-    src: url(../fonts/MiSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: MiSans Semibold;
-    src: url(../fonts/MiSans-Semibold.ttf);
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -131,11 +121,11 @@ footer {
 }
 
 b {
-    font-family: MiSans Semibold;
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: MiSans Semibold;
+    font-weight: bold;
 }
 
 hr {

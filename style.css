@@ -1,23 +1,11 @@
 /* This file is used to style the website */
 
-/* 定义字体 */
-@font-face {
-    font-family: "MiSans Regular";
-    src: url(fonts/MiSans-Regular.ttf);
-}
-
-@font-face {
-    font-family: "MiSans Semibold";
-    src: url(fonts/MiSans-Semibold.ttf);
-}
-/* 结束 */
-
 /* 定义全局样式 */
 body {
     background-color: lemonchiffon;
     margin: 0;
     padding: 0;
-    font-family: "MiSans Regular"; 
+    font-family: MiSans; 
     background-image: url(img/bg1.jpg);
     background-size: cover;
     background-position: center;
@@ -31,7 +19,7 @@ body {
         background-color: lemonchiffon;
         margin: 0;
         padding: 0;
-        font-family: "MiSans Regular"; 
+        font-family: MiSans; 
         background-image: url(img/bg2.jpg);
         background-size: cover;
         background-position: center;
@@ -42,11 +30,11 @@ body {
 }
 
 b {
-    font-family: "MiSans Semibold";
+    font-weight: bold;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "MiSans Semibold";
+    font-weight: bold;
 }
 
 hr {
@@ -149,6 +137,9 @@ a:hover {
 
 /* 专门给音乐室用的 */
 .music-divs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     transition: transform 0.5s;
     border-radius: 10px;
     padding: 12px;
@@ -171,6 +162,22 @@ a:hover {
 .music-divs p b {
     color:sandybrown;
     font-size: 18px;
+}
+
+.load-music {
+    background-color: #ADD8E6;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.load-music:hover {
+    background-color: #87CEFA;
 }
 /* 结束 */
 
@@ -485,7 +492,7 @@ th, td {
 }
 
 .notice-text {
-    font-family: "MiSans Semibold";
+    font-weight: bold;
     background-color: rgb(255, 0, 0);
     border-radius: 10px;
     display: inline-flex;

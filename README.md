@@ -1,6 +1,6 @@
 # Dan_Evan's Personal Website
 
-### Blog Title :link: https://ElofHew.github.io 
+### :link: https://ElofHew.github.io 
 
 ### Don't Copy without telling me!
 
