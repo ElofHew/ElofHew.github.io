@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="description" content="这里是Dan_Evan的个人网站，欢迎访问！" />
-    <meta name="keywords" content="Dan_Evan,ElofHew,网站,博客,开源项目,哔哩哔哩,Bilibili,B站,GitHub,Python,开源,技术博客,个人网站,个人博客,OakStudio,QuarterOS" />
+    <meta name="keywords"
+        content="Dan_Evan,ElofHew,网站,博客,开源项目,哔哩哔哩,Bilibili,B站,GitHub,Python,开源,技术博客,个人网站,个人博客,OakStudio,QuarterOS" />
     <meta name="author" content="Dan_Evan" />
     <meta name="robots" content="index,follow" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -13,22 +15,24 @@
     <link rel="stylesheet" href="https://font.sec.miui.com/font/css?family=MiSans:400,700:MiSans" />
     <title>主站 - Dan_Evan's Website</title>
 </head>
-<body style="padding-top: 40px;">
+
+<body>
     <script src="js/click_effect.js"></script>
-    <script src="js/expand.js"></script>
     <div class="header">
         <p><b>Dan_Evan's Website</b></p>
     </div>
     <div class="notice-pt">
         <marquee behavior="scroll" direction="left" class="notice-text">
-            <div id="warn-top"><p>(正在获取公告...)<noscript style="color:white;">(请开启JavaScript)</noscript></p></div>
-            <script src="js/head.js"></script>
+            <div id="warn-top">
+                <p>(正在获取公告...)<noscript style="color:white;">(请开启JavaScript)</noscript></p>
+            </div>
         </marquee>
     </div>
     <div class="scroll-pt">
         <marquee behavior="scroll" direction="left" class="scroll-text">
-            <div id="head-top"><p>(正在获取公告...)<noscript style="color:red;">(请开启JavaScript)</noscript></p></div>
-            <script src="js/head.js"></script>
+            <div id="head-top">
+                <p>(正在获取公告...)<noscript style="color:red;">(请开启JavaScript)</noscript></p>
+            </div>
         </marquee>
     </div>
     <hr />
@@ -40,28 +44,27 @@
     <div style="background-color: rgba(220, 223, 255, 0.8);" class="block-divs">
         <div class="centerpst">
             <div id="time" class="dttm">当前时间：<noscript style="color:red">(请开启JavaScript)</noscript></div>
-            <script src="js/time.js"></script>
             <br />
             <div id="date" class="dttm">今天是：<noscript style="color:red">(请开启JavaScript)</noscript></div>
-            <script src="js/date.js"></script>
             <div class="words">&nbsp;你今天看上去很聪明！！！ :)&nbsp;</div>
             <div>
                 <p id="hitokoto" style="font-size: 12px;" class="words">
-                    <a href="#" id="hitokoto_text" target="_blank">正在从 一言服务器 获取中...<noscript style="color:red">(请开启JavaScript)</noscript></a>
+                    <a href="#" id="hitokoto_text" target="_blank">正在从 一言服务器 获取中...<noscript
+                            style="color:red">(请开启JavaScript)</noscript></a>
                 </p>
-                <script src="js/hitokoto.js"></script>
             </div>
             <div class="search-box">
                 <input type="text" class="search-input" placeholder="在必应搜索..." id="searchInput">
-                <button class="search-button" onclick="search()"><img src="icons/search.svg" width="20" height="20"></button>
+                <button class="search-button" onclick="search()"><img src="icons/search.svg" width="20"
+                        height="20"></button>
             </div>
-            <script src="js/search.js"></script>
         </div>
     </div>
     <hr />
     <div style="background-color: rgba(240, 255, 220, 0.8);" class="block-divs">
         <h3 style="text-align: center; color: darkcyan">张子豪就不应该被淘汰！</h3>
-        <p style="color:cornflowerblue; text-align: center;">梨冻紧、Wiz_H张子豪<br /><b style="color:sandybrown;">罗生门（Follow）</b></p>
+        <p style="color:cornflowerblue; text-align: center;">梨冻紧、Wiz_H张子豪<br /><b
+                style="color:sandybrown;">罗生门（Follow）</b></p>
         <div class="audio">
             <audio controls>
                 <source src="https://www.danevan.top/WEB/audio/audio1.mp3" type="audio/mpeg" />
@@ -79,7 +82,6 @@
     <!--临时性倒计时-->
     <div id="countdown" style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs">
         <p id="countdown-text">(正在获取倒计时...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
-        <script src="js/countdown.js"></script>
     </div>
     <!--临时性倒计时-->
     <hr />
@@ -98,31 +100,40 @@
         <div style="background-color: rgba(255, 232, 243, 0.8);" class="block-divs" id="about">
             <p style="color:yellowgreen" align="left">
                 <span style="font-size:20px; color:lightseagreen;"><b>网站概述：</b></span>
-                <ul>
-                    <li><b>使用字体：</b>MiSans</li>
-                    <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
-                    <li><b>使用工具：</b>VSCode、Github Pages</li>
-                    <li><b>本站网址：</b><a href="https://www.danevan.top">www.danevan.top</a></li>
-                    <li><b>博客网址：</b><a href="https://www.danevan.top/Blogs/" target="_blank">www.danevan.top/Blogs</a></li>
-                    <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)</li>
-                </ul>
+            <ul>
+                <li><b>使用字体：</b>MiSans</li>
+                <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
+                <li><b>使用工具：</b>VSCode、Github Pages</li>
+                <li><b>本站网址：</b><a href="https://www.danevan.top">www.danevan.top</a></li>
+                <li><b>博客网址：</b><a href="https://www.danevan.top/Blogs/" target="_blank">www.danevan.top/Blogs</a></li>
+                <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)</li>
+            </ul>
             </p>
         </div>
         <hr />
         <div style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs" id="contacts">
             <p style="color:yellowgreen" align="left">
                 <span style="font-size:20px; color:#448AFF;"><b>我的联系方式：</b></span>
-                <ul>
-                    <li><img src="icons/bilibili.svg" width="15" height="15"> B站：<a href="https://space.bilibili.com/642688364" target="_blank">@Dan_Evan</a></li>
-                    <li><img src="icons/weibo.svg" width="15" height="15"> 微博：<a href="https://weibo.com/u/5664519001" target="_blank">@Dan_Evan</a></li>
-                    <li><img src="icons/github.svg" width="15" height="15"> GitHub：<a href="https://github.com/ElofHew" target="_blank">@ElofHew</a></li>
-                    <li><img src="icons/qq2.svg" width="15" height="15"> 我的QQ频道：<a href="https://pd.qq.com/s/b0nn9lb2p" target="_blank">大伊万的神秘频道</a></li>
-                    <li><img src="icons/qq2.svg" width="15" height="15"> QQ：<a href="https://qm.qq.com/q/BPdpfotZgQ" target="_blank">@Dr.Evan.</a></li>
-                    <li><img src="icons/weixin.svg" width="15" height="15"> 微信：<a href="./img/mmqrcode.png" target="_blank">@Evan.</a></li>
-                    <li><img src="icons/telegram.svg" width="15" height="15"> Telegram：<a href="https://t.me/ElofHew" target="_blank">@ElofHew</a></li>
-                    <li><img src="icons/email1.svg" width="15" height="15"> Email(1)：<a href="mailto:dan_evan233@outlook.com" target="_blank">dan_evan233@outlook.com</a></li>
-                    <li><img src="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com" target="_blank">2352235176@qq.com</a></li>
-                </ul>
+            <ul>
+                <li><img src="icons/bilibili.svg" width="15" height="15"> B站：<a
+                        href="https://space.bilibili.com/642688364" target="_blank">@Dan_Evan</a></li>
+                <li><img src="icons/weibo.svg" width="15" height="15"> 微博：<a href="https://weibo.com/u/5664519001"
+                        target="_blank">@Dan_Evan</a></li>
+                <li><img src="icons/github.svg" width="15" height="15"> GitHub：<a href="https://github.com/ElofHew"
+                        target="_blank">@ElofHew</a></li>
+                <li><img src="icons/qq2.svg" width="15" height="15"> 我的QQ频道：<a href="https://pd.qq.com/s/b0nn9lb2p"
+                        target="_blank">大伊万的神秘频道</a></li>
+                <li><img src="icons/qq2.svg" width="15" height="15"> QQ：<a href="https://qm.qq.com/q/BPdpfotZgQ"
+                        target="_blank">@Dr.Evan.</a></li>
+                <li><img src="icons/weixin.svg" width="15" height="15"> 微信：<a href="./img/mmqrcode.png"
+                        target="_blank">@Evan.</a></li>
+                <li><img src="icons/telegram.svg" width="15" height="15"> Telegram：<a href="https://t.me/ElofHew"
+                        target="_blank">@ElofHew</a></li>
+                <li><img src="icons/email1.svg" width="15" height="15"> Email(1)：<a
+                        href="mailto:dan_evan233@outlook.com" target="_blank">dan_evan233@outlook.com</a></li>
+                <li><img src="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com"
+                        target="_blank">2352235176@qq.com</a></li>
+            </ul>
             </p>
         </div>
         <hr />
@@ -132,10 +143,19 @@
                 <h4 align="center" style="color:#448AFF; margin: 5px 0;" class="subtitle">神秘开源项目</h4>
                 <p align="left" style="color:maroon">我的开源项目(By ElofHew)</p>
                 <ul>
-                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/DE_numguess" target="_blank">DE Numguess</a></li>
-                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/QOS" target="_blank">Quarter OS</a></li>
-                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/LBM" target="_blank">Leaf Boot Manager</a></li>
-                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/komfetch" target="_blank">KomFetch</a></li>
+                    <li><img src="icons/python.svg" width="15" height="15"> <a
+                            href="https://github.com/ElofHew/DE_numguess" target="_blank">DE
+                            Numguess</a><br />一个基于Python3的猜数字小游戏</li>
+                    <li><img src="icons/python.svg" width="15" height="15"> <a
+                            href="https://github.com/ElofHew/RandomCallTool"
+                            target="_blank">RandomCallTool</a><br />一个基于Python3+Tkinter的随机抽取工具</li>
+                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/QOS"
+                            target="_blank">Quarter OS</a><br />Pro级的Python伪系统</li>
+                    <li><img src="icons/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/LBM"
+                            target="_blank">Leaf Boot Manager</a><br />适用于QuarterOS的启动引导程序</li>
+                    <li><img src="icons/python.svg" width="15" height="15"> <a
+                            href="https://github.com/ElofHew/komfetch"
+                            target="_blank">KomFetch</a><br />适用于QuarterOS的系统信息获取工具</li>
                 </ul>
             </details>
         </div>
@@ -162,109 +182,21 @@
                 </ul>
                 <p>(微信支付、支付宝均可)</p>
                 <p>(你可以右键查看原图保存后识别)</p>
-                <p>本人表示衷心感谢！<img src="icons/emoji3.png" alt="🤓" width="20" height="20" /><img src="icons/emoji1.png" alt="👍" width="20" height="20" /></p>
+                <p>本人表示衷心感谢！<img src="icons/emoji3.png" alt="🤓" width="20" height="20" /><img src="icons/emoji1.png"
+                        alt="👍" width="20" height="20" /></p>
                 <hr />
                 <h3 align="center" style="margin: 5px 0;margin-bottom: 10px;" class="subtitle">赞助列表：</h3>
-                <div id="donate-list"><p>(正在获取赞助列表...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p></div>
-                <script src="js/donate.js"></script>
+                <div id="donate-list">
+                    <p>(正在获取赞助列表...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
+                </div>
             </details>
         </div>
-        <hr />
-        <div id="sheets">
-        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="holiday-table">
-            <details>
-                <summary><b>中国传统节日大全表</b></summary>
-                <table class="cn-table">
-                    <caption><b>中国传统节日大全表</b></caption>
-                    <tbody>
-                        <tr><td><b>节日</b></td><td><b>时间</b></td></tr>
-                        <tr><td>春节</td><td>农历正月初一</td></tr>
-                        <tr><td>元宵节</td><td>农历正月十五</td></tr>
-                        <tr><td>龙抬头</td><td>农历二月初二</td></tr>
-                        <tr><td>上巳节</td><td>农历三月初三</td></tr>
-                        <tr><td>寒食节</td><td>清明前一天</td></tr>
-                        <tr><td>清明节</td><td>公历4月5日前后</td></tr>
-                        <tr><td>端午节</td><td>农历五月初五</td></tr>
-                        <tr><td>七夕节</td><td>农历七月初七</td></tr>
-                        <tr><td>中元节</td><td>农历七月十五</td></tr>
-                        <tr><td>中秋节</td><td>农历八月十五</td></tr>
-                        <tr><td>重阳节</td><td>农历九月初九</td></tr>
-                        <tr><td>寒衣节</td><td>农历十月初一</td></tr>
-                        <tr><td>下元节</td><td>农历十月十五</td></tr>
-                        <tr><td>冬至节</td><td>公历12月21日前后</td></tr>
-                        <tr><td>腊八节</td><td>农历腊月初八</td></tr>
-                        <tr><td>小年</td><td>农历腊月二十三</td></tr>
-                        <tr><td>除夕</td><td>农历腊月最后一天</td></tr>
-                    </tbody>
-                </table>
-            </details>
-        </div>
-        <hr />
-        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="24-table">
-            <details>
-                <summary><b>24节气大全表</b></summary>
-                <table class="cn-table">
-                    <caption><b>24节气大全表</b></caption>
-                    <thead><tr><th>节气</th><th>日期</th></tr></thead>
-                    <tbody>
-                        <tr><td>立春</td><td>2月3-5日</td></tr>
-                        <tr><td>雨水</td><td>2月18-20日</td></tr>
-                        <tr><td>惊蛰</td><td>3月5-7日</td></tr>
-                        <tr><td>春分</td><td>3月20-23日</td></tr>
-                        <tr><td>清明</td><td>4月4-6日</td></tr>
-                        <tr><td>谷雨</td><td>4月19-21日</td></tr>
-                        <tr><td>立夏</td><td>5月5-7日</td></tr>
-                        <tr><td>小满</td><td>5月20-22日</td></tr>
-                        <tr><td>芒种</td><td>6月5-7日</td></tr>
-                        <tr><td>夏至</td><td>6月21-23日</td></tr>
-                        <tr><td>小暑</td><td>7月6-8日</td></tr>
-                        <tr><td>大暑</td><td>7月22-24日</td></tr>
-                        <tr><td>立秋</td><td>8月7-9日</td></tr>
-                        <tr><td>处暑</td><td>8月22-24日</td></tr>
-                        <tr><td>白露</td><td>9月7-9日</td></tr>
-                        <tr><td>秋分</td><td>9月22-24日</td></tr>
-                        <tr><td>寒露</td><td>10月8-9日</td></tr>
-                        <tr><td>霜降</td><td>10月23-24日</td></tr>
-                        <tr><td>立冬</td><td>11月7-8日</td></tr>
-                        <tr><td>小雪</td><td>11月22-23日</td></tr>
-                        <tr><td>大雪</td><td>12月6-8日</td></tr>
-                        <tr><td>冬至</td><td>12月21-23日</td></tr>
-                        <tr><td>小寒</td><td>1月5-7日</td></tr>
-                        <tr><td>大寒</td><td>1月20-21日</td></tr>
-                    </tbody>
-                </table>
-            </details>
-        </div>
-        <hr />
-        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="sh-table">
-            <details>
-                <summary><b>社会主义核心价值观</b></summary>
-                <table class="cn-table">
-                    <caption><b>社会主义核心价值观</b></caption>
-                    <thead><tr><th>层面</th><th>价值观</th></tr></thead>
-                    <tbody>
-                        <tr><td><b>国家</b></td><td>富强</td></tr>
-                        <tr><td></td><td>民主</td></tr>
-                        <tr><td></td><td>文明</td></tr>
-                        <tr><td></td><td>和谐</td></tr>
-                        <tr><td><b>社会</b></td><td>自由</td></tr>
-                        <tr><td></td><td>平等</td></tr>
-                        <tr><td></td><td>公正</td></tr>
-                        <tr><td></td><td>法治</td></tr>
-                        <tr><td><b>个人</b></td><td>爱国</td></tr>
-                        <tr><td></td><td>敬业</td></tr>
-                        <tr><td></td><td>诚信</td></tr>
-                        <tr><td></td><td>友善</td></tr>
-                    </tbody>
-                </table>
-            </details>
-        </div>
-    </div>
     </div>
     <hr />
     <div class="about-div">
         <p>
-            本网站由<a href="https://github.com/ElofHew" target="_blank">ElofHew</a>使用<a href="https://pages.github.com/" target="_blank">GitHub Pages</a>搭建<br />           
+            本网站由<a href="https://github.com/ElofHew" target="_blank">ElofHew</a>使用<a href="https://pages.github.com/"
+                target="_blank">GitHub Pages</a>搭建<br />
             <a href="https://icp.gov.moe/?keyword=20240312" target="_blank">萌ICP备20240312号</a><br />
             <a href="http://icpgov.xin/beian/ICP-2024110091.html" target="_blank">酱2024110091号</a><br />
             © Dan_Evan 2024~2025 All rights reserved.
@@ -272,6 +204,8 @@
     </div>
     <div class="footer-prt" id="footer-prt">
     </div>
+    <script src="js/main.js"></script>
     <script src="js/bottom.js"></script>
 </body>
+
 </html>
