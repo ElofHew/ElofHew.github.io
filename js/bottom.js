@@ -7,7 +7,6 @@ document.getElementById("footer-prt").innerHTML = `
     <a href="https://www.danevan.top/Blogs/" target="_blank"><img src="icons/blog.svg" width="30" height="30" /></a>
     <a href="https://www.danevan.top/friendlink.html"><img src="icons/link.svg" width="30" height="30" /></a>
     <a href="https://www.danevan.top/music.html"><img src="icons/music.svg" width="30" height="30" /></a>
-    <a href="https://www.danevan.top/game.html"><img src="icons/game.svg" width="30" height="30" /></a>
 </div>
 `
 

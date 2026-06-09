@@ -128,11 +128,9 @@ a:hover {
 
 /* ---------- 板块通用卡片样式 ---------- */
 .block-divs,
-.game-divs,
 .music-divs,
 .novel-list-divs,
-.help-div,
-.game-content {
+.help-div {
     border-radius: 10px;
     padding: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
@@ -142,7 +140,6 @@ a:hover {
 }
 
 .block-divs:hover,
-.game-divs:hover,
 .music-divs:hover {
     transform: scale(1.02);
 }
@@ -150,52 +147,6 @@ a:hover {
 .block-divs h2 {
     font-size: 20px;
     color: lightseagreen;
-}
-
-/* ---------- 游戏中心专用 ---------- */
-.game-divs {
-    background-color: rgba(184, 198, 255, 0.4);
-}
-
-.game-divs h2 {
-    color: rgb(164, 89, 255);
-    text-align: center;
-}
-
-.game-divs p {
-    color: rgb(70, 135, 255);
-    text-align: center;
-}
-
-.help-div {
-    background-color: rgba(184, 255, 233, 0.4);
-}
-
-.game-content {
-    background-color: rgba(190, 255, 184, 0.4);
-    color: #555;
-}
-
-.game-content h4 {
-    font-size: 18px;
-    color: #448AFF;
-}
-
-.game-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.divcut {
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 10px;
-    padding: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 180px;
-    text-align: left;
-    margin: auto;
 }
 
 /* ---------- 音乐室专用 ---------- */
@@ -279,12 +230,6 @@ a:hover {
 .fldd p {
     text-align: left;
     color: maroon;
-}
-
-/* ---------- 小说库专用 ---------- */
-.novel-list-divs h2 {
-    font-size: 20px;
-    color: lightseagreen;
 }
 
 /* ---------- 主站头像 ---------- */
