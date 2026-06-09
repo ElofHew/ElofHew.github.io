@@ -165,6 +165,8 @@ a:hover {
 }
 
 .load-music {
+    display: block;
+    margin: 0 auto;
     background-color: #ADD8E6;
     color: #ffffff;
     border: none;
