@@ -9,7 +9,7 @@
 (function initHead() {
     var warnEl = document.getElementById("warn-top");
     if (warnEl) {
-        warnEl.innerHTML = '<p>即日起，个人网站域名调整为：home.danevan.top</p>';
+        warnEl.innerHTML = '<p>即日起，个人网站域名调整为：www.danevan.top</p>';
     }
     var headEl = document.getElementById("head-top");
     if (headEl) {

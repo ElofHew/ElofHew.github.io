@@ -2,11 +2,12 @@
 
 document.getElementById("footer-prt").innerHTML = `
 <div class="footer" id="footer">
-    <a href="https://home.danevan.top/"><img src="icons/main.svg" width="30" height="30" /></a>
-    <a href="https://home.danevan.top/download.html"><img src="icons/dl.svg" width="30" height="30" /></a>
-    <a href="https://home.danevan.top/Blogs/" target="_blank"><img src="icons/blog.svg" width="30" height="30" /></a>
-    <a href="https://home.danevan.top/friendlink.html"><img src="icons/link.svg" width="30" height="30" /></a>
-    <a href="https://home.danevan.top/music.html"><img src="icons/music.svg" width="30" height="30" /></a>
+    <a href="https://www.danevan.top/"><img src="icons/main.svg" width="30" height="30" /></a>
+    <a href="https://www.danevan.top/download.html"><img src="icons/dl.svg" width="30" height="30" /></a>
+    <a href="https://www.danevan.top/Blogs/" target="_blank"><img src="icons/blog.svg" width="30" height="30" /></a>
+    <a href="https://www.danevan.top/friendlink.html"><img src="icons/link.svg" width="30" height="30" /></a>
+    <a href="https://www.danevan.top/music.html"><img src="icons/music.svg" width="30" height="30" /></a>
+    <a href="https://home.danevan.top/"><img src="icons/home.svg" width="30" height="30" /></a>
 </div>
 `
 
