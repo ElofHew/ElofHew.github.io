@@ -9,11 +9,11 @@
 (function initHead() {
     var warnEl = document.getElementById("warn-top");
     if (warnEl) {
-        warnEl.innerHTML = '<p>网站已更换域名为：www.danevan.top</p>';
+        warnEl.innerHTML = '<p>即日起，个人网站域名调整为：home.danevan.top</p>';
     }
     var headEl = document.getElementById("head-top");
     if (headEl) {
-        headEl.innerHTML = '<p>时间转瞬即逝，2025年马上就要过去了……</p>';
+        headEl.innerHTML = '<p>哎呦我，不是这2026怎么都过去一大半了，亦无颜。</p>';
     }
 })();
 
@@ -39,7 +39,8 @@
 (function initDate() {
     var el = document.getElementById('date');
     if (el) {
-        el.innerText = '今天是：' + new Date().toLocaleDateString();
+        var now = new Date();
+        el.innerText = '今天是：' + now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日';
     }
 })();
 
@@ -81,7 +82,7 @@
 // 6. 新年倒计时
 // ============================================
 (function initCountdown() {
-    var target = new Date("January 1, 2026 00:00:00").getTime();
+    var target = new Date("July 9, 2026 00:00:00").getTime();
     var el = document.getElementById("countdown-text");
     if (!el) return;
 
@@ -90,7 +91,7 @@
         var dist = target - now;
 
         if (dist < 0) {
-            el.innerHTML = '<b style="color: orangered; text-align: center;">新年快乐</b>';
+            el.innerHTML = '<b style="color: orangered; text-align: center;">放暑假了爽死我了😍</b>';
             return;
         }
 
@@ -99,7 +100,7 @@
         var mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
         var secs = Math.floor((dist % (1000 * 60)) / 1000);
 
-        el.innerHTML = '距离2026年还有：<br /><span style="color: tan;">' +
+        el.innerHTML = '距离主播放暑假还有：<br /><span style="color: tan;">' +
             days + '天 ' + hours + '小时 ' + mins + '分钟 ' + secs + '秒</span>';
     }
 
