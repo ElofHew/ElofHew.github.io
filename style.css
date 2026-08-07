@@ -9,16 +9,10 @@ body {
     padding-top: 45px;
     font-family: MiSans;
     background-color: lemonchiffon;
-    background-image: url(img/bg1.jpg);
+    background-image: url(img/bg.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-@media (min-width: 601px) {
-    body {
-        background-image: url(img/bg2.jpg);
-    }
 }
 
 b,
@@ -73,7 +67,7 @@ a:hover {
     width: 100%;
     height: 40px;
     z-index: 1000;
-    background: linear-gradient(180deg, #4d90ff, #448AFF);
+    background: linear-gradient(180deg, #4A86F2, #3D7BE8);
     color: white;
     display: flex;
     align-items: center;
@@ -91,7 +85,17 @@ a:hover {
 /* ---------- 底部关于信息 ---------- */
 .about-div {
     text-align: center;
-    color: gray;
+    color: #3E5447;
+}
+
+/* 底部版权 / ICP 链接：用深蓝对比色，避免与绿色背景混淆看不清 */
+.about-div a,
+.about-div a:visited {
+    color: #1565C0;
+}
+
+.about-div a:hover {
+    color: #0D47A1;
 }
 
 /* ---------- 底部浮动导航栏 ---------- */
@@ -273,10 +277,10 @@ a:hover {
 
 /* ---------- 主站大标题 / 小标题 ---------- */
 .main-title {
-    color: #448AFF;
+    color: #3D7BE8;
     text-align: center;
     margin: 10px 0;
-    text-shadow: 0 2px 6px rgba(68, 138, 255, 0.22);
+    text-shadow: 0 2px 6px rgba(61, 123, 232, 0.22);
 }
 
 .subtitle {
