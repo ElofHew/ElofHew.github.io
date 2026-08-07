@@ -8,129 +8,171 @@
     <link rel="stylesheet" href="https://font.sec.miui.com/font/css?family=MiSans:400,700:MiSans" />
     <title>404 页面未找到 - Dan_Evan's Website</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: MiSans;
-            background-color: #F5F5DC;
-            padding-top: 10px;
-            margin: 10px;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px 20px;
+            background: linear-gradient(160deg, #eef3ff 0%, #fdf1f7 50%, #fff8ec 100%);
+            color: #333;
         }
 
-        .div-pt {
+        .wrap {
             text-align: center;
+            max-width: 520px;
+            width: 100%;
         }
 
-        .divcut {
-            display: inline-block;
+        .icon404 {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 10px;
+            display: block;
+            border-radius: 50%;
+            background: #fff;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
+            object-fit: cover;
+            padding: 6px;
+        }
+
+        .err-code {
+            font-size: 110px;
+            font-weight: 700;
+            line-height: 1;
+            margin: 6px 0 10px;
+            background: linear-gradient(120deg, #6a5cff, #ff7eb3 55%, #ffb26b);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .sub {
+            font-size: 20px;
+            color: #666;
+            margin: 0 0 26px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.88);
+            border-radius: 18px;
+            padding: 24px 28px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             text-align: left;
-            background-color: rgba(255, 255, 255, 0.5);
-            border-radius: 10px;
-            padding: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-            max-width: 400px;
+            margin-bottom: 24px;
+        }
+
+        .card h4 {
+            color: #6a5cff;
+            margin: 16px 0 8px;
+            font-size: 17px;
+        }
+
+        .card h4:first-child {
+            margin-top: 0;
+        }
+
+        .card ol,
+        .card ul {
+            margin: 0 0 4px;
+            padding-left: 22px;
+        }
+
+        .card ol li {
+            color: #e07b39;
+            margin: 6px 0;
+        }
+
+        .card ul li {
+            color: #3aa675;
+            margin: 6px 0;
+        }
+
+        .btn-row {
+            display: flex;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
         }
 
         .button {
             display: inline-block;
-            padding: 10px 20px;
-            background-color: rgb(222, 184, 135);
+            padding: 12px 28px;
+            background: linear-gradient(120deg, #6a5cff, #8e7bff);
             color: #fff;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 999px;
             text-align: center;
             font-size: 16px;
-            font-weight: bold;
-            transition: background-color 0.3s;
-            margin: 5px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 6px 18px rgba(106, 92, 255, 0.30);
         }
 
         .button:hover {
-            background-color: rgb(228, 191, 142);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 24px rgba(106, 92, 255, 0.40);
         }
 
-        .centerpst {
-            text-align: center;
+        .footer-info {
+            margin-top: 32px;
+            color: #999;
+            font-size: 13px;
+            line-height: 1.9;
         }
 
-        .centerpst .button,
-        .centerpst .button:hover {
-            color: white;
+        .footer-info a,
+        .footer-info a:visited {
+            color: #8a8a8a;
             text-decoration: none;
         }
 
-        hr {
-            max-width: 380px;
-            color: black;
-        }
-
-        ol {
-            color: #F44336;
-        }
-
-        ul {
-            color: limegreen;
-        }
-
-        h4 {
-            color: blueviolet;
-        }
-
-        a,
-        a:visited {
-            color: #00C853;
-            text-decoration: none;
-        }
-
-        a:hover {
-            color: #00e15e;
+        .footer-info a:hover {
+            color: #6a5cff;
             text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <div style="text-align: center;">
-        <h1>404</h1>
-    </div>
-    <h3 style="text-align: center;"><b>抱歉，您访问的页面未找到。</b></h3>
+    <div class="wrap">
+        <img src="https://www.danevan.top/img/emoji/思考.png" alt="404" class="icon404" />
+        <div class="err-code">404</div>
+        <p class="sub"><b>抱歉，您访问的页面未找到。</b></p>
 
-    <div class="div-pt">
-        <div class="divcut">
+        <div class="card">
             <h4>可能由于以下原因：</h4>
             <ol>
-                <li>该页面尚未被发布</li>
-                <li>您输入的网址有误</li>
-                <li>您没有权限访问该页面</li>
-                <li>服务器发生了错误</li>
-                <li>服务器维护中，暂时无法访问</li>
+                <li>网址拼写有误（GitHub Pages 区分字母大小写）</li>
+                <li>页面文件尚未上传，或部署仍在进行中</li>
+                <li>页面已被移动、删除或链接失效</li>
             </ol>
             <h4>建议您：</h4>
             <ul>
-                <li>检查输入的网址是否正确</li>
-                <li>检查网络连接是否正常</li>
-                <li>稍后再试，或检查网络代理</li>
-                <li>联系站长反馈错误</li>
+                <li>仔细检查网址拼写，注意大小写</li>
+                <li>回到主站，从导航重新找到入口</li>
+                <li>若刚更新过页面，稍等片刻再刷新</li>
+                <li>仍无法访问，请联系站长反馈</li>
             </ul>
         </div>
 
-        <hr />
-
-        <div class="divcut">
-            <div class="centerpst">
-                <a href="https://www.danevan.top/" class="button">主站</a>
-                <a href="https://www.danevan.top/Blogs/" target="_blank" class="button">博客</a>
-            </div>
+        <div class="btn-row">
+            <a href="https://www.danevan.top/" class="button">🏠 回到主站</a>
+            <a href="https://www.danevan.top/Blogs/" target="_blank" class="button">📝 前往博客</a>
         </div>
-    </div>
 
-    <hr />
-
-    <div>
-        <p style="color: gray; text-align: center;">
+        <div class="footer-info">
             本网站由<a href="https://github.com/ElofHew" target="_blank">ElofHew</a>使用<a href="https://pages.github.com/"
                 target="_blank">GitHub Pages</a>搭建<br />
             <a href="https://icp.gov.moe/?keyword=20240312" target="_blank">萌ICP备20240312号</a><br />
             &copy; Dan_Evan 2024~2026 All rights reserved.
-        </p>
+        </div>
     </div>
 </body>
 
