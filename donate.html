@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <script src="js/click_effect.js"></script>
+    <script src="js/animation.js"></script>
 
     <div class="header">
         <p><b>Dan_Evan's Website</b></p>
@@ -31,26 +31,30 @@
     <h1 class="main-title"><b>助我KFC神力</b></h1>
     <hr />
 
-    <!-- 赞助 -->
-    <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="donate">
-        <p>(微信支付、支付宝均可)</p>
-        <p>(你可以右键查看原图保存后识别)</p>
-        <p>本人表示衷心感谢！<img src="img/emoji/眼镜.png" alt="🤓" width="20" height="20" /><img src="img/emoji/拇指向上.png" alt="👍"
-                width="20" height="20" /></p>
+    <div class="tiles">
 
-        <!-- 收款码按钮 -->
-        <div class="centerpst">
-            <a href="img/qrcode/wxpay.png" class="button" target="_blank">微信支付</a>
-            <a href="img/qrcode/alipay.jpg" class="button" target="_blank">支付宝</a>
-        </div>
-        <div class="centerpst" id="qrcode-box">
-            <p>(点击上方按钮查看收款码)</p>
+        <!-- 赞助 -->
+        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="donate">
+            <p>(微信支付、支付宝均可)</p>
+            <p>(你可以右键查看原图保存后识别)</p>
+            <p>本人表示衷心感谢！<img src="img/emoji/眼镜.png" alt="🤓" width="20" height="20" /><img src="img/emoji/拇指向上.png"
+                    alt="👍" width="20" height="20" /></p>
+
+            <!-- 收款码按钮 -->
+            <div class="centerpst">
+                <a href="img/qrcode/wxpay.png" class="button" target="_blank">微信支付</a>
+                <a href="img/qrcode/alipay.jpg" class="button" target="_blank">支付宝</a>
+            </div>
+            <div class="centerpst" id="qrcode-box">
+                <p>(点击上方按钮查看收款码)</p>
+            </div>
+
+            <hr />
+            <div id="donate-list">
+                <p>(正在获取赞助列表...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
+            </div>
         </div>
 
-        <hr />
-        <div id="donate-list">
-            <p>(正在获取赞助列表...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
-        </div>
     </div>
 
     <hr />
@@ -65,8 +69,9 @@
     </div>
 
     <div class="footer-prt" id="footer-prt"></div>
-    <script src="js/main.js"></script>
-    <script src="js/bottom.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

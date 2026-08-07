@@ -1,6 +1,6 @@
 /**
- * main.js - 主页核心功能模块
- * 整合: 时间/日期、公告、一言、搜索、倒计时、赞助列表、URL参数展开
+ * info.js - 实时信息获取模块
+ * 公告栏、实时时钟、日期、一言、倒计时、赞助列表、URL 参数展开
  */
 
 // ============================================
@@ -61,25 +61,7 @@
 })();
 
 // ============================================
-// 5. 必应搜索
-// ============================================
-(function initSearch() {
-    window.search = function () {
-        var input = document.querySelector('.search-input');
-        if (input && input.value) {
-            window.open('https://www.bing.com/search?q=' + encodeURIComponent(input.value), '_blank');
-        }
-    };
-    var inputEl = document.getElementById('searchInput');
-    if (inputEl) {
-        inputEl.addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') window.search();
-        });
-    }
-})();
-
-// ============================================
-// 6. 新年倒计时
+// 5. 倒计时
 // ============================================
 (function initCountdown() {
     var target = new Date("February 22, 2222 22:22:22").getTime();
@@ -109,7 +91,7 @@
 })();
 
 // ============================================
-// 7. 赞助列表
+// 6. 赞助列表
 // ============================================
 (function initDonate() {
     var el = document.getElementById("donate-list");
@@ -127,7 +109,7 @@
 })();
 
 // ============================================
-// 8. URL参数展开（?expand=divId）
+// 7. URL 参数展开（?expand=divId）
 // ============================================
 (function initExpand() {
     var params = new URLSearchParams(window.location.search);

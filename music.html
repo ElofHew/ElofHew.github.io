@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <script src="js/click_effect.js"></script>
+    <script src="js/animation.js"></script>
 
     <div class="header">
         <p><b>Dan_Evan's Website</b></p>
@@ -31,125 +31,129 @@
     <h1 class="main-title"><b>神秘音乐室</b></h1>
     <hr />
 
-    <!-- 1. 罗生门 -->
-    <div class="music-divs">
-        <p><b>罗生门（Follow）</b><br />梨冻紧、Wiz_H张子豪</p>
-        <button class="load-music" data-id="1456890009">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_1"></div>
-    </div>
-    <hr />
+    <div class="tiles">
 
-    <!-- 2. 八分之一 -->
-    <div class="music-divs">
-        <p><b>八分之一</b><br />JD</p>
-        <button class="load-music" data-id="1302813759">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_2"></div>
-    </div>
-    <hr />
+        <!-- 1. 罗生门 -->
+        <div class="music-divs">
+            <p><b>罗生门（Follow）</b><br />梨冻紧、Wiz_H张子豪</p>
+            <button class="load-music" data-id="1456890009">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_1"></div>
+        </div>
+        <hr />
 
-    <!-- 3. 小丑马戏 -->
-    <div class="music-divs">
-        <p><b>小丑马戏</b><br />王瀚哲（中国BOY）</p>
-        <button class="load-music" data-id="1892621400">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_3"></div>
-    </div>
-    <hr />
+        <!-- 2. 八分之一 -->
+        <div class="music-divs">
+            <p><b>八分之一</b><br />JD</p>
+            <button class="load-music" data-id="1302813759">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_2"></div>
+        </div>
+        <hr />
 
-    <!-- 4. 百变酒精 -->
-    <div class="music-divs">
-        <p><b>百变酒精</b><br />法老</p>
-        <button class="load-music" data-id="1488990357">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_4"></div>
-    </div>
-    <hr />
+        <!-- 3. 小丑马戏 -->
+        <div class="music-divs">
+            <p><b>小丑马戏</b><br />王瀚哲（中国BOY）</p>
+            <button class="load-music" data-id="1892621400">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_3"></div>
+        </div>
+        <hr />
 
-    <!-- 5. Ngana Rindu -->
-    <div class="music-divs">
-        <p><b>Ngana Rindu</b><br />DJ Lucu</p>
-        <button class="load-music" data-id="1492000103">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_5"></div>
-    </div>
-    <hr />
+        <!-- 4. 百变酒精 -->
+        <div class="music-divs">
+            <p><b>百变酒精</b><br />法老</p>
+            <button class="load-music" data-id="1488990357">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_4"></div>
+        </div>
+        <hr />
 
-    <!-- 6. 室内系的TrackMaker -->
-    <div class="music-divs">
-        <p><b>室内系的TrackMaker</b><br />Hanser</p>
-        <button class="load-music" data-id="537787665">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_6"></div>
-    </div>
-    <hr />
+        <!-- 5. Ngana Rindu -->
+        <div class="music-divs">
+            <p><b>Ngana Rindu</b><br />DJ Lucu</p>
+            <button class="load-music" data-id="1492000103">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_5"></div>
+        </div>
+        <hr />
 
-    <!-- 7. 春を告げる -->
-    <div class="music-divs">
-        <p><b>春を告げる</b><br />yama</p>
-        <button class="load-music" data-id="1486106274">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_7"></div>
-    </div>
-    <hr />
+        <!-- 6. 室内系的TrackMaker -->
+        <div class="music-divs">
+            <p><b>室内系的TrackMaker</b><br />Hanser</p>
+            <button class="load-music" data-id="537787665">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_6"></div>
+        </div>
+        <hr />
 
-    <!-- 8. 幹物女 -->
-    <div class="music-divs">
-        <p><b>幹物女</b><br />封茗囧菌</p>
-        <button class="load-music" data-id="35345243">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_8"></div>
-    </div>
-    <hr />
+        <!-- 7. 春を告げる -->
+        <div class="music-divs">
+            <p><b>春を告げる</b><br />yama</p>
+            <button class="load-music" data-id="1486106274">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_7"></div>
+        </div>
+        <hr />
 
-    <!-- 9. 打上花火 -->
-    <div class="music-divs">
-        <p><b>打上花火</b><br />Daoko、米津玄師</p>
-        <button class="load-music" data-id="496869422">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_9"></div>
-    </div>
-    <hr />
+        <!-- 8. 幹物女 -->
+        <div class="music-divs">
+            <p><b>幹物女</b><br />封茗囧菌</p>
+            <button class="load-music" data-id="35345243">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_8"></div>
+        </div>
+        <hr />
 
-    <!-- 10. 哪里都是你 -->
-    <div class="music-divs">
-        <p><b>哪里都是你</b><br />队长</p>
-        <button class="load-music" data-id="488249475">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_10"></div>
-    </div>
-    <hr />
+        <!-- 9. 打上花火 -->
+        <div class="music-divs">
+            <p><b>打上花火</b><br />Daoko、米津玄師</p>
+            <button class="load-music" data-id="496869422">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_9"></div>
+        </div>
+        <hr />
 
-    <!-- 11. 就要做挑战 -->
-    <div class="music-divs">
-        <p><b>就要做挑战</b><br />小潮院长</p>
-        <button class="load-music" data-id="2016385110">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_11"></div>
-    </div>
-    <hr />
+        <!-- 10. 哪里都是你 -->
+        <div class="music-divs">
+            <p><b>哪里都是你</b><br />队长</p>
+            <button class="load-music" data-id="488249475">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_10"></div>
+        </div>
+        <hr />
 
-    <!-- 12. 1001夜 -->
-    <div class="music-divs">
-        <p><b>1001夜</b><br />KBShinya、Hanser</p>
-        <button class="load-music" data-id="1423014472">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_12"></div>
-    </div>
-    <hr />
+        <!-- 11. 就要做挑战 -->
+        <div class="music-divs">
+            <p><b>就要做挑战</b><br />小潮院长</p>
+            <button class="load-music" data-id="2016385110">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_11"></div>
+        </div>
+        <hr />
 
-    <!-- 13. 我的悲伤是水做的 -->
-    <div class="music-divs">
-        <p><b>我的悲伤是水做的</b><br />多多poi</p>
-        <button class="load-music" data-id="1939506453">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_13"></div>
-    </div>
-    <hr />
+        <!-- 12. 1001夜 -->
+        <div class="music-divs">
+            <p><b>1001夜</b><br />KBShinya、Hanser</p>
+            <button class="load-music" data-id="1423014472">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_12"></div>
+        </div>
+        <hr />
 
-    <!-- 14. Mask -->
-    <div class="music-divs">
-        <p><b>Mask</b><br />Dream</p>
-        <button class="load-music" data-id="1844853470">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_14"></div>
-    </div>
-    <hr />
+        <!-- 13. 我的悲伤是水做的 -->
+        <div class="music-divs">
+            <p><b>我的悲伤是水做的</b><br />多多poi</p>
+            <button class="load-music" data-id="1939506453">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_13"></div>
+        </div>
+        <hr />
 
-    <!-- 15. 东京不太热 -->
-    <div class="music-divs">
-        <p><b>东京不太热</b><br />Z新豪、洛天依Official</p>
-        <button class="load-music" data-id="1478965386">播放音乐</button>
-        <div class="iframe-container" id="load-iframe_15"></div>
+        <!-- 14. Mask -->
+        <div class="music-divs">
+            <p><b>Mask</b><br />Dream</p>
+            <button class="load-music" data-id="1844853470">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_14"></div>
+        </div>
+        <hr />
+
+        <!-- 15. 东京不太热 -->
+        <div class="music-divs">
+            <p><b>东京不太热</b><br />Z新豪、洛天依Official</p>
+            <button class="load-music" data-id="1478965386">播放音乐</button>
+            <div class="iframe-container" id="load-iframe_15"></div>
+        </div>
+        <hr />
+
     </div>
-    <hr />
 
     <div class="about-div">
         <p>
@@ -161,8 +165,8 @@
     </div>
 
     <div class="footer-prt" id="footer-prt"></div>
-    <script src="js/bottom.js"></script>
-    <script src="js/load_music.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>

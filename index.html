@@ -5,7 +5,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="这里是Dan_Evan的个人网站，这是一个很简陋很简单的小个人站，你可以通过访问这个网站来了解我，并获取一些我分享的东西，还可以找到一些其他好玩的东西。对于我的博客，我基本上没写几篇，也不想写……，。并且本网站可能好长一段时间都不一定更新一次（因为我懒）。" />
+    <meta name="description"
+        content="这里是Dan_Evan的个人网站，这是一个很简陋很简单的小个人站，你可以通过访问这个网站来了解我，并获取一些我分享的东西，还可以找到一些其他好玩的东西。对于我的博客，我基本上没写几篇，也不想写……，。并且本网站可能好长一段时间都不一定更新一次（因为我懒）。" />
     <meta name="keywords"
         content="Dan_Evan,ElofHew,网站,博客,开源项目,哔哩哔哩,Bilibili,B站,GitHub,Python,开源,技术博客,个人网站,个人博客,OakStudio" />
     <meta name="author" content="Dan_Evan" />
@@ -17,7 +18,7 @@
 </head>
 
 <body>
-    <script src="js/click_effect.js"></script>
+    <script src="js/animation.js"></script>
     <div class="header">
         <p><b>Dan_Evan's Website</b></p>
     </div>
@@ -41,131 +42,141 @@
         <h1 class="main-title"><b>Dan_Evanの主站</b></h1>
     </div>
     <hr />
-    <div style="background-color: rgba(220, 223, 255, 0.8);" class="block-divs">
-        <div class="centerpst">
-            <div id="time" class="dttm">当前时间：<noscript style="color:red">(请开启JavaScript)</noscript></div>
-            <br />
-            <div id="date" class="dttm">今天是：<noscript style="color:red">(请开启JavaScript)</noscript></div>
-            <div class="words">&nbsp;你今天看上去很聪明！！！ :)&nbsp;</div>
-            <div>
-                <p id="hitokoto" style="font-size: 12px;" class="words">
-                    <a href="#" id="hitokoto_text" target="_blank">正在从 一言服务器 获取中...<noscript
-                            style="color:red">(请开启JavaScript)</noscript></a>
+    <div class="tiles">
+        <div style="background-color: rgba(220, 223, 255, 0.8);" class="block-divs">
+            <div class="centerpst">
+                <div id="time" class="dttm">当前时间：<noscript style="color:red">(请开启JavaScript)</noscript></div>
+                <br />
+                <div id="date" class="dttm">今天是：<noscript style="color:red">(请开启JavaScript)</noscript></div>
+                <div class="words">&nbsp;你今天看上去很聪明！！！ :)&nbsp;</div>
+                <div>
+                    <p id="hitokoto" style="font-size: 12px;" class="words">
+                        <a href="#" id="hitokoto_text" target="_blank">正在从 一言服务器 获取中...<noscript
+                                style="color:red">(请开启JavaScript)</noscript></a>
+                    </p>
+                </div>
+                <div class="search-box">
+                    <input type="text" class="search-input" placeholder="在必应搜索..." id="searchInput">
+                    <button class="search-button" onclick="search()"><img src="icons/search.svg" width="20"
+                            height="20"></button>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div style="background-color: rgba(240, 255, 220, 0.8);" class="block-divs">
+            <h3 style="text-align: center; color: darkcyan">张子豪就不应该被淘汰！</h3>
+            <p style="color:cornflowerblue; text-align: center;">梨冻紧、Wiz_H张子豪<br /><b
+                    style="color:sandybrown;">罗生门（Follow）</b></p>
+            <div class="audio">
+                <audio controls>
+                    <source src="audio/audio1.mp3" type="audio/mpeg" />
+                    你的浏览器不支持音频播放。
+                </audio>
+            </div>
+        </div>
+        <hr />
+        <div style="background-color: rgba(255, 240, 200, 0.8);" class="block-divs">
+            <!--计数器，编辑开预览的时候请暂时删去-->
+            <p style="color:gray" align="center"><span style="font-size:15px;">↓ 神秘网页访问次数计数器 ↓</span></p>
+            <center><img src="https://count.himiku.com/get/@ElofHew?theme=rule34" width="260" /></center>
+        </div>
+        <hr />
+        <!--临时性倒计时-->
+        <div id="countdown" style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs">
+            <p id="countdown-text">(正在获取倒计时...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
+        </div>
+        <!--临时性倒计时-->
+        <hr />
+        <div style="background-color: rgba(251, 255, 220, 0.8);" class="block-divs">
+            <div class="centerpst">
+                <a href="https://www.danevan.top/" class="button">主站</a>
+                <a href="https://www.danevan.top/download.html" class="button">下载站</a>
+                <a href="https://www.danevan.top/Blogs/" target="_blank" class="button">博客</a>
+                <a href="https://www.danevan.top/music.html" class="button">音乐室</a>
+                <a href="https://www.danevan.top/friendlink.html" class="button">友情链接</a>
+            </div>
+        </div>
+        <hr />
+        <div class="container">
+            <div style="background-color: rgba(255, 232, 243, 0.8);" class="block-divs" id="about">
+                <p class="section-para">
+                    <span class="section-title"><b>网站概述：</b></span>
+                <ul>
+                    <li><b>使用字体：</b>MiSans</li>
+                    <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
+                    <li><b>使用工具：</b>VSCode、Github Pages</li>
+                    <li><b>本站网址：</b><a href="https://www.danevan.top">www.danevan.top</a></li>
+                    <li><b>博客网址：</b><a href="https://www.danevan.top/Blogs/" target="_blank">www.danevan.top/Blogs</a>
+                    </li>
+                    <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)</li>
+                </ul>
                 </p>
             </div>
-            <div class="search-box">
-                <input type="text" class="search-input" placeholder="在必应搜索..." id="searchInput">
-                <button class="search-button" onclick="search()"><img src="icons/search.svg" width="20"
-                        height="20"></button>
+            <hr />
+            <div style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs" id="contacts">
+                <p class="section-para">
+                    <span class="section-title"><b>我的联系方式：</b></span>
+                <ul>
+                    <li><img src="icons/social/bilibili.svg" width="15" height="15"> B站：<a
+                            href="https://space.bilibili.com/642688364" target="_blank">@Dan_Evan</a></li>
+                    <li><img src="icons/social/weibo.svg" width="15" height="15"> 微博：<a
+                            href="https://weibo.com/u/5664519001" target="_blank">@Dan_Evan</a></li>
+                    <li><img src="icons/social/github.svg" width="15" height="15"> GitHub：<a
+                            href="https://github.com/ElofHew" target="_blank">@ElofHew</a></li>
+                    <li><img src="icons/social/qqradio.svg" width="15" height="15"> 我的QQ频道：<a
+                            href="https://pd.qq.com/s/b0nn9lb2p" target="_blank">大伊万的神秘频道</a></li>
+                    <li><img src="icons/social/qq.svg" width="15" height="15"> QQ：<a
+                            href="https://qm.qq.com/q/BPdpfotZgQ" target="_blank">@Dr.Evan.</a></li>
+                    <li><img src="icons/social/wechat.svg" width="15" height="15"> 微信：<a href="./img/qrcode/wechat.png"
+                            target="_blank">@Evan.</a></li>
+                    <li><img src="icons/social/telegram.svg" width="15" height="15"> Telegram：<a
+                            href="https://t.me/ElofHew" target="_blank">@ElofHew</a></li>
+                    <li><img src="icons/email1.svg" width="15" height="15"> Email(1)：<a
+                            href="mailto:dan_evan233@outlook.com" target="_blank">dan_evan233@outlook.com</a></li>
+                    <li><img src="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com"
+                            target="_blank">2352235176@qq.com</a></li>
+                </ul>
+                </p>
+            </div>
+            <hr />
+            <div style="background-color: rgba(238, 255, 214, 0.8);" class="block-divs" id="open-source">
+                <details open>
+                    <summary><b>神秘开源项目</b></summary>
+                    <div class="details-body">
+                        <h4 class="subtitle" style="margin: 5px 0;">神秘开源项目</h4>
+                        <p style="text-align: left;color: maroon;">我的开源项目(By ElofHew)</p>
+                        <ul>
+                            <li><img src="icons/language/python.svg" width="15" height="15"> <a
+                                    href="https://github.com/ElofHew/DE_numguess" target="_blank">DE
+                                    Numguess</a><br />一个基于Python3的猜数字小游戏</li>
+                            <li><img src="icons/language/python.svg" width="15" height="15"> <a
+                                    href="https://github.com/ElofHew/RandomCallTool"
+                                    target="_blank">RandomCallTool</a><br />一个基于Python3+Tkinter的随机抽取工具</li>
+                            <li><img src="icons/language/python.svg" width="15" height="15"> <a
+                                    href="https://github.com/ElofHew/QOS" target="_blank">Quarter
+                                    OS</a><br />Pro级的Python伪系统</li>
+                            <li><img src="icons/language/python.svg" width="15" height="15"> <a
+                                    href="https://github.com/ElofHew/LBM" target="_blank">Leaf Boot
+                                    Manager</a><br />适用于QuarterOS的启动引导程序</li>
+                            <li><img src="icons/language/python.svg" width="15" height="15"> <a
+                                    href="https://github.com/ElofHew/komfetch"
+                                    target="_blank">KomFetch</a><br />适用于QuarterOS的系统信息获取工具</li>
+                        </ul>
+                    </div>
+                </details>
             </div>
         </div>
-    </div>
-    <hr />
-    <div style="background-color: rgba(240, 255, 220, 0.8);" class="block-divs">
-        <h3 style="text-align: center; color: darkcyan">张子豪就不应该被淘汰！</h3>
-        <p style="color:cornflowerblue; text-align: center;">梨冻紧、Wiz_H张子豪<br /><b
-                style="color:sandybrown;">罗生门（Follow）</b></p>
-        <div class="audio">
-            <audio controls>
-                <source src="audio/audio1.mp3" type="audio/mpeg" />
-                你的浏览器不支持音频播放。
-            </audio>
-        </div>
-    </div>
-    <hr />
-    <div style="background-color: rgba(255, 240, 200, 0.8);" class="block-divs">
-        <!--计数器，编辑开预览的时候请暂时删去-->
-        <p style="color:gray" align="center"><span style="font-size:15px;">↓ 神秘网页访问次数计数器 ↓</span></p>
-        <center><img src="https://count.himiku.com/get/@ElofHew?theme=rule34" width="260" /></center>
-    </div>
-    <hr />
-    <!--临时性倒计时-->
-    <div id="countdown" style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs">
-        <p id="countdown-text">(正在获取倒计时...)<noscript style="color:red"><br />(请开启JavaScript)</noscript></p>
-    </div>
-    <!--临时性倒计时-->
-    <hr />
-    <div style="background-color: rgba(251, 255, 220, 0.8);" class="block-divs">
-        <div class="centerpst">
-            <a href="https://www.danevan.top/" class="button">主站</a>
-            <a href="https://www.danevan.top/download.html" class="button">下载站</a>
-            <a href="https://www.danevan.top/Blogs/" target="_blank" class="button">博客</a>
-            <a href="https://www.danevan.top/music.html" class="button">音乐室</a>
-            <a href="https://www.danevan.top/friendlink.html" class="button">友情链接</a>
-        </div>
-    </div>
-    <hr />
-    <div class="container">
-        <div style="background-color: rgba(255, 232, 243, 0.8);" class="block-divs" id="about">
-            <p class="section-para">
-                <span class="section-title"><b>网站概述：</b></span>
-            <ul>
-                <li><b>使用字体：</b>MiSans</li>
-                <li><b>使用语言：</b>HTML、CSS、JavaScript（前端三件套）</li>
-                <li><b>使用工具：</b>VSCode、Github Pages</li>
-                <li><b>本站网址：</b><a href="https://www.danevan.top">www.danevan.top</a></li>
-                <li><b>博客网址：</b><a href="https://www.danevan.top/Blogs/" target="_blank">www.danevan.top/Blogs</a></li>
-                <li><b>开发人员：</b><a href="https://github.com/ElofHew" target="_blank">ElofHew</a>(开发者&站长)</li>
-            </ul>
-            </p>
-        </div>
         <hr />
-        <div style="background-color: rgba(225, 255, 235, 0.8);" class="block-divs" id="contacts">
-            <p class="section-para">
-                <span class="section-title"><b>我的联系方式：</b></span>
-            <ul>
-                <li><img src="icons/social/bilibili.svg" width="15" height="15"> B站：<a
-                        href="https://space.bilibili.com/642688364" target="_blank">@Dan_Evan</a></li>
-                <li><img src="icons/social/weibo.svg" width="15" height="15"> 微博：<a href="https://weibo.com/u/5664519001"
-                        target="_blank">@Dan_Evan</a></li>
-                <li><img src="icons/social/github.svg" width="15" height="15"> GitHub：<a href="https://github.com/ElofHew"
-                        target="_blank">@ElofHew</a></li>
-                <li><img src="icons/social/qqradio.svg" width="15" height="15"> 我的QQ频道：<a href="https://pd.qq.com/s/b0nn9lb2p"
-                        target="_blank">大伊万的神秘频道</a></li>
-                <li><img src="icons/social/qq.svg" width="15" height="15"> QQ：<a href="https://qm.qq.com/q/BPdpfotZgQ"
-                        target="_blank">@Dr.Evan.</a></li>
-                <li><img src="icons/social/wechat.svg" width="15" height="15"> 微信：<a href="./img/qrcode/wechat.png"
-                        target="_blank">@Evan.</a></li>
-                <li><img src="icons/social/telegram.svg" width="15" height="15"> Telegram：<a href="https://t.me/ElofHew"
-                        target="_blank">@ElofHew</a></li>
-                <li><img src="icons/email1.svg" width="15" height="15"> Email(1)：<a
-                        href="mailto:dan_evan233@outlook.com" target="_blank">dan_evan233@outlook.com</a></li>
-                <li><img src="icons/email2.svg" width="15" height="15"> Email(2)：<a href="mailto:2352235176@qq.com"
-                        target="_blank">2352235176@qq.com</a></li>
-            </ul>
-            </p>
-        </div>
-        <hr />
-        <div style="background-color: rgba(238, 255, 214, 0.8);" class="block-divs" id="open-source">
-            <details open>
-                <summary><b>神秘开源项目</b></summary>
-                <h4 class="subtitle" style="margin: 5px 0;">神秘开源项目</h4>
-                <p style="text-align: left;color: maroon;">我的开源项目(By ElofHew)</p>
-                <ul>
-                    <li><img src="icons/language/python.svg" width="15" height="15"> <a
-                            href="https://github.com/ElofHew/DE_numguess" target="_blank">DE
-                            Numguess</a><br />一个基于Python3的猜数字小游戏</li>
-                    <li><img src="icons/language/python.svg" width="15" height="15"> <a
-                            href="https://github.com/ElofHew/RandomCallTool"
-                            target="_blank">RandomCallTool</a><br />一个基于Python3+Tkinter的随机抽取工具</li>
-                    <li><img src="icons/language/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/QOS"
-                            target="_blank">Quarter OS</a><br />Pro级的Python伪系统</li>
-                    <li><img src="icons/language/python.svg" width="15" height="15"> <a href="https://github.com/ElofHew/LBM"
-                            target="_blank">Leaf Boot Manager</a><br />适用于QuarterOS的启动引导程序</li>
-                    <li><img src="icons/language/python.svg" width="15" height="15"> <a
-                            href="https://github.com/ElofHew/komfetch"
-                            target="_blank">KomFetch</a><br />适用于QuarterOS的系统信息获取工具</li>
-                </ul>
-            </details>
-        </div>
-    </div>
-    <hr />
-    <div class="container">
-        <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="donate">
-            <details>
-                <summary><b><s>V我50渐渐石粒</s></b></summary>
-                <a href="https://www.danevan.top/donate.html" style="text-decoration: none;color: rgb(37, 176, 222);">点击这里助力我获得KFC神力，。</a>
-            </details>
+        <div class="container">
+            <div style="background-color: rgba(255,255,255, 0.8);" class="block-divs" id="donate">
+                <details>
+                    <summary><b><s>V我50渐渐石粒</s></b></summary>
+                    <div class="details-body">
+                        <a href="https://www.danevan.top/donate.html"
+                            style="text-decoration: none;color: rgb(37, 176, 222);">点击这里助力我获得KFC神力，。</a>
+                    </div>
+                </details>
+            </div>
         </div>
     </div>
     <hr />
@@ -179,8 +190,9 @@
     </div>
     <div class="footer-prt" id="footer-prt">
     </div>
-    <script src="js/main.js"></script>
-    <script src="js/bottom.js"></script>
+    <script src="js/info.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/functions.js"></script>
 </body>
 
 </html>
