@@ -238,8 +238,7 @@ a:hover {
 .avatar {
     transition: transform 1s;
     object-fit: cover;
-    width: 130px;
-    height: 130px;
+    width: 200px;
     margin: 0 auto;
     display: block;
 }

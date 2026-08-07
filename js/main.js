@@ -82,7 +82,7 @@
 // 6. 新年倒计时
 // ============================================
 (function initCountdown() {
-    var target = new Date("July 9, 2026 00:00:00").getTime();
+    var target = new Date("February 22, 2222 22:22:22").getTime();
     var el = document.getElementById("countdown-text");
     if (!el) return;
 
@@ -91,7 +91,7 @@
         var dist = target - now;
 
         if (dist < 0) {
-            el.innerHTML = '<b style="color: orangered; text-align: center;">放暑假了爽死我了😍</b>';
+            el.innerHTML = '<b style="color: orangered; text-align: center;">不是哥们你开桂了？</b>';
             return;
         }
 
@@ -100,7 +100,7 @@
         var mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
         var secs = Math.floor((dist % (1000 * 60)) / 1000);
 
-        el.innerHTML = '距离主播放暑假还有：<br /><span style="color: tan;">' +
+        el.innerHTML = '距离2222-2-22 22:22:22还有：<br /><span style="color: tan;">' +
             days + '天 ' + hours + '小时 ' + mins + '分钟 ' + secs + '秒</span>';
     }
 
