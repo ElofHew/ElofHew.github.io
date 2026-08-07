@@ -265,6 +265,32 @@ a:hover {
     text-align: right;
 }
 
+/* ---------- 栏目标题（板块内段落标题） ---------- */
+.section-para {
+    color: yellowgreen;
+    text-align: left;
+}
+
+.section-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#about .section-title {
+    color: lightseagreen;
+}
+
+#contacts .section-title {
+    color: #448AFF;
+}
+
+/* ---------- 居中副标题（details 块内） ---------- */
+.subtitle-center {
+    text-align: center;
+    color: #448AFF;
+    margin: 5px 0;
+}
+
 /* ---------- 时间 / 日期框 ---------- */
 .dttm {
     color: chocolate;
