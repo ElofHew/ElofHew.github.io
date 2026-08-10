@@ -109,7 +109,21 @@
 })();
 
 // ============================================
-// 7. URL 参数展开（?expand=divId）
+// 7. Vercount 浏览量千分位格式化
+// ============================================
+(function initVercountFmt() {
+    var el = document.getElementById('vercount_value_site_pv');
+    if (!el) return;
+    function fmt() {
+        var n = el.textContent.replace(/,/g, '').trim();
+        if (/^\d+$/.test(n)) el.textContent = Number(n).toLocaleString('en-US');
+    }
+    new MutationObserver(fmt).observe(el, { childList: true, characterData: true, subtree: true });
+    fmt();
+})();
+
+// ============================================
+// 8. URL 参数展开（?expand=divId）
 // ============================================
 (function initExpand() {
     var params = new URLSearchParams(window.location.search);
