@@ -115,8 +115,11 @@
     var el = document.getElementById('vercount_value_site_pv');
     if (!el) return;
     function fmt() {
-        var n = el.textContent.replace(/,/g, '').trim();
-        if (/^\d+$/.test(n)) el.textContent = Number(n).toLocaleString('en-US');
+        var n = el.textContent.trim();
+        if (n.indexOf(',') !== -1) return;   // 已带千分位，直接跳过，防止死循环
+        if (!/^\d+$/.test(n)) return;        // 非纯数字（如 Loading...），跳过
+        var formatted = Number(n).toLocaleString('en-US');
+        if (formatted !== el.textContent) el.textContent = formatted;
     }
     new MutationObserver(fmt).observe(el, { childList: true, characterData: true, subtree: true });
     fmt();
