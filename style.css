@@ -149,6 +149,8 @@ a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     max-width: 350px;
     margin: auto;
+    /* 单列（非瀑布流）时提供上下间距；PC 瀑布流为 absolute 定位，不受影响 */
+    margin-bottom: 18px;
     transition: transform 0.5s, box-shadow 0.5s;
 }
 
@@ -570,26 +572,6 @@ html {
 ::selection {
     background-color: #448AFF;
     color: #fff;
-}
-
-/* 自定义滚动条（粉彩风格） */
-::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: rgba(255, 250, 220, 0.6);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgba(68, 138, 255, 0.45);
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(68, 138, 255, 0.7);
 }
 
 /* 表单控件字体统一 */
