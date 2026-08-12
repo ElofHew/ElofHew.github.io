@@ -429,8 +429,6 @@ a:hover {
 .cn-table {
     border-collapse: collapse;
     width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
 }
 
 .cn-table,
