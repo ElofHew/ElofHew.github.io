@@ -105,6 +105,7 @@
             '<tr><td>graphic</td><td>25-02-01</td><td>￥1.63</td></tr>' +
             '<tr><td>lu</td><td>25-01至25-05</td><td>总共16个月QQ超级会员</td></tr>' +
             '<tr><td>Chiyao6840</td><td>26-08-11</td><td>￥1.11</td></tr>' +
+            '<tr><td>Mr_lbrain</td><td>26-08-13</td><td>￥2.58</td></tr>' +
             '</tbody></table>';
     }
 })();
