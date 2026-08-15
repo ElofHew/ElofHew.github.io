@@ -1,0 +1,55 @@
+{
+    "warn-top": "即日起，个人网站域名调整为：www.danevan.top",
+    "head-top": "哎呦我，不是这2026怎么都过去一大半了，亦无颜。",
+    "home-info": "&nbsp;你今天看上去很聪明！！！ :)&nbsp;",
+    "other-top": {
+        "download": "这里是下载站……",
+        "donate":  "V我50渐渐石粒……",
+        "music": "音乐绝大部分使用网易云音源",
+        "friend": "点击蓝色粗体名字可以跳转到对应网站或B站主页"
+    },
+    "countdown": {
+        "targetTip": "距离我17岁生日还有",
+        "targetDate": {
+            "year": 2026,
+            "month": 12,
+            "day": 14,
+            "hour": 0,
+            "minute": 0,
+            "second": 0
+        },
+        "timezone": ["Asia/Shanghai", "UTC+8"]
+    },
+    "bottom-button": {
+        "01": {
+            "link": "https://www.danevan.top/",
+            "icon": "icons/main.svg",
+            "target": "_self"
+        },
+        "02": {
+            "link": "https://www.danevan.top/download.html",
+            "icon": "icons/download.svg",
+            "target": "_self"
+        },
+        "03": {
+            "link": "https://blog.danevan.top/",
+            "icon": "icons/blog.svg",
+            "target": "_blank"
+        },
+        "04": {
+            "link": "https://www.danevan.top/friend.html",
+            "icon": "icons/link.svg",
+            "target": "_self"
+        },
+        "05": {
+            "link": "https://www.danevan.top/music.html",
+            "icon": "icons/music.svg",
+            "target": "_self"
+        },
+        "06": {
+            "link": "https://home.danevan.top/",
+            "icon": "icons/home.svg",
+            "target": "_blank"
+        }
+    }
+}

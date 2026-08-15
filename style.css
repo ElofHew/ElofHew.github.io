@@ -139,6 +139,11 @@ a:hover {
     border-radius: 5px;
 }
 
+.footer img {
+    width: 30px;
+    height: 30px;
+}
+
 /* ---------- 板块通用卡片样式 ---------- */
 .block-divs,
 .music-divs,

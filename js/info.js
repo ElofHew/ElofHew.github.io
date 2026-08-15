@@ -4,17 +4,42 @@
  */
 
 // ============================================
-// 1. 公告栏（顶部警告 + 滚动公告）
+// 1. 站点信息（公告/标语/倒计时）从 info/info.json 加载
 // ============================================
-(function initHead() {
-    var warnEl = document.getElementById("warn-top");
-    if (warnEl) {
-        warnEl.innerHTML = '<p>即日起，个人网站域名调整为：www.danevan.top</p>';
-    }
-    var headEl = document.getElementById("head-top");
-    if (headEl) {
-        headEl.innerHTML = '<p>哎呦我，不是这2026怎么都过去一大半了，亦无颜。</p>';
-    }
+(function initSiteInfo() {
+    fetch('info/info.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            var warnEl = document.getElementById("warn-top");
+            if (warnEl && data['warn-top']) {
+                warnEl.innerHTML = '<p>' + data['warn-top'] + '</p>';
+            }
+
+            var headEl = document.getElementById("head-top");
+            if (headEl && data['head-top']) {
+                headEl.innerHTML = '<p>' + data['head-top'] + '</p>';
+            }
+
+            var homeEl = document.getElementById("home-info");
+            if (homeEl && data['home-info']) {
+                homeEl.innerHTML = data['home-info'];
+            }
+
+            // 其它页面顶部滚动公告（other-top），id 形如 scroll-download / scroll-donate ...
+            var others = data['other-top'] || {};
+            Object.keys(others).forEach(function (key) {
+                var oEl = document.getElementById('scroll-' + key);
+                if (oEl && others[key]) {
+                    oEl.innerHTML = others[key];
+                }
+            });
+
+            // 倒计时配置到位后再初始化
+            if (data.countdown) {
+                initCountdown(data.countdown);
+            }
+        })
+        .catch(function (err) { console.error('站点信息加载失败:', err); });
 })();
 
 // ============================================
@@ -61,12 +86,40 @@
 })();
 
 // ============================================
-// 5. 倒计时
+// 5. 倒计时（配置由 initSiteInfo 从 info.json 传入）
 // ============================================
-(function initCountdown() {
-    var target = new Date("February 22, 2222 22:22:22").getTime();
+function initCountdown(cfg) {
     var el = document.getElementById("countdown-text");
-    if (!el) return;
+    if (!el || !cfg || !cfg.targetDate) return;
+
+    var d = cfg.targetDate;
+
+    // 尝试从 timezone 解析 UTC 偏移（如 "UTC+8"），使不同时区访客看到一致的倒计时
+    function parseUtcOffset(tz) {
+        if (!tz) return null;
+        if (Object.prototype.toString.call(tz) === '[object Array]') {
+            for (var i = 0; i < tz.length; i++) {
+                var m = String(tz[i]).match(/UTC([+-]\d{1,2})(?::(\d{2}))?/i);
+                if (m) {
+                    var h = parseInt(m[1], 10);
+                    var min = m[2] ? parseInt(m[2], 10) : 0;
+                    return h * 60 + (h >= 0 ? min : -min); // 分钟
+                }
+            }
+        }
+        return null;
+    }
+
+    var offsetMin = parseUtcOffset(cfg.timezone);
+    var target;
+    if (offsetMin !== null) {
+        // 目标时间按指定时区的“墙上时间”换算为 UTC 时间戳
+        target = Date.UTC(d.year, d.month - 1, d.day, d.hour || 0, d.minute || 0, d.second || 0) - offsetMin * 60000;
+    } else {
+        // 未提供时区信息：按访客本地时间解释
+        target = new Date(d.year, d.month - 1, d.day, d.hour || 0, d.minute || 0, d.second || 0).getTime();
+    }
+    var tip = cfg.targetTip || '距离目标时间还有';
 
     function update() {
         var now = new Date().getTime();
@@ -82,13 +135,13 @@
         var mins = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
         var secs = Math.floor((dist % (1000 * 60)) / 1000);
 
-        el.innerHTML = '距离2222-2-22 22:22:22还有：<br /><span style="color: tan;">' +
+        el.innerHTML = tip + '：<br /><span style="color: tan;">' +
             days + '天 ' + hours + '小时 ' + mins + '分钟 ' + secs + '秒</span>';
     }
 
     setInterval(update, 1000);
     update();
-})();
+}
 
 // ============================================
 // 6. 赞助列表

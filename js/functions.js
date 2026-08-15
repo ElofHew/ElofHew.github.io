@@ -59,31 +59,40 @@
 // 3. 底部浮动导航栏（含滚动隐藏）
 // ============================================
 (function initFooter() {
-    document.getElementById("footer-prt").innerHTML = `
-<div class="footer" id="footer">
-    <a href="https://www.danevan.top/"><img src="icons/main.svg" width="30" height="30" /></a>
-    <a href="https://www.danevan.top/download.html"><img src="icons/download.svg" width="30" height="30" /></a>
-    <a href="https://blog.danevan.top/" target="_blank"><img src="icons/blog.svg" width="30" height="30" /></a>
-    <a href="https://www.danevan.top/friendlink.html"><img src="icons/link.svg" width="30" height="30" /></a>
-    <a href="https://www.danevan.top/music.html"><img src="icons/music.svg" width="30" height="30" /></a>
-    <a href="https://home.danevan.top/" target="_blank"><img src="icons/home.svg" width="30" height="30" /></a>
-</div>
-`;
+    fetch('info/info.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            // 底部 dock 按钮列表从 info.json 的 bottom-button 读取
+            var btn = data['bottom-button'] || {};
+            var links = Object.keys(btn).map(function (key) { return btn[key]; });
 
-    document.addEventListener("DOMContentLoaded", function () {
-        var lastScrollTop = 0;
-        var footer = document.getElementById("footer");
+            var html = '<div class="footer" id="footer">';
+            links.forEach(function (item) {
+                if (item && item.link && item.icon) {
+                    var target = item.target ? ' target="' + item.target + '"' : '';
+                    html += '<a href="' + item.link + '"' + target + '><img src="' + item.icon + '" /></a>';
+                }
+            });
+            html += '</div>';
 
-        window.addEventListener("scroll", function () {
-            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            var container = document.getElementById("footer-prt");
+            if (container) container.innerHTML = html;
 
-            if (scrollTop > lastScrollTop) {
-                footer.style.bottom = "-65px";
-            } else {
-                footer.style.bottom = "5px";
-            }
+            // 滚动隐藏（footer 已渲染，直接绑定即可）
+            var footer = document.getElementById("footer");
+            if (!footer) return;
+            var lastScrollTop = 0;
+            window.addEventListener("scroll", function () {
+                var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
-        }, false);
-    });
+                if (scrollTop > lastScrollTop) {
+                    footer.style.bottom = "-65px";
+                } else {
+                    footer.style.bottom = "5px";
+                }
+
+                lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+            }, false);
+        })
+        .catch(function (err) { console.error('底部导航栏加载失败:', err); });
 })();
