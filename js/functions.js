@@ -25,34 +25,57 @@
 // 2. 网易云音乐加载
 // ============================================
 (function initMusic() {
-    document.addEventListener('DOMContentLoaded', function () {
-        // 获取所有的加载音乐按钮
-        var buttons = document.querySelectorAll('.load-music');
+    var container = document.getElementById('music-tiles');
+    if (!container) return;
 
-        // 为每个按钮设置点击事件监听器
-        buttons.forEach(function (button) {
-            button.addEventListener('click', function () {
-                // 获取按钮对应的音乐ID
-                var musicId = this.getAttribute('data-id');
-                // 获取按钮对应的iframe容器
-                var iframeContainer = this.nextElementSibling;
+    fetch('info/music.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            container.innerHTML = '';   // 清掉占位提示
+            var keys = Object.keys(data);
 
-                // 创建一个新的iframe元素
-                var iframe = document.createElement('iframe');
-                iframe.frameBorder = "no";
-                iframe.border = "0";
-                iframe.marginWidth = "0";
-                iframe.marginHeight = "0";
-                iframe.width = "320";
-                iframe.height = "86";
-                iframe.src = `https://music.163.com/outchain/player?type=2&id=${musicId}&auto=0&height=66`;
+            keys.forEach(function (key, idx) {
+                var item = data[key];
+                if (!item || !item['data-id']) return;
 
-                // 移除按钮并添加iframe到容器中
-                this.remove();
-                iframeContainer.appendChild(iframe);
+                var div = document.createElement('div');
+                div.className = 'music-divs';
+
+                var p = document.createElement('p');
+                p.innerHTML = '<b>' + item.song + '</b><br />' + item.singer;
+                div.appendChild(p);
+
+                var btn = document.createElement('button');
+                btn.className = 'load-music';
+                btn.setAttribute('data-id', item['data-id']);
+                btn.textContent = '播放音乐';
+                div.appendChild(btn);
+
+                var iframeContainer = document.createElement('div');
+                iframeContainer.className = 'iframe-container';
+                iframeContainer.id = 'load-iframe_' + (idx + 1);
+                div.appendChild(iframeContainer);
+
+                container.appendChild(div);
+
+                // 点击按钮，插入网易云播放器 iframe
+                btn.addEventListener('click', function () {
+                    var musicId = this.getAttribute('data-id');
+                    var iframe = document.createElement('iframe');
+                    iframe.frameBorder = "no";
+                    iframe.border = "0";
+                    iframe.marginWidth = "0";
+                    iframe.marginHeight = "0";
+                    iframe.width = "320";
+                    iframe.height = "86";
+                    iframe.src = 'https://music.163.com/outchain/player?type=2&id=' + musicId + '&auto=0&height=66';
+
+                    this.remove();
+                    iframeContainer.appendChild(iframe);
+                });
             });
-        });
-    });
+        })
+        .catch(function (err) { console.error('音乐列表加载失败:', err); });
 })();
 
 // ============================================
