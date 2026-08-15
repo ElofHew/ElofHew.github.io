@@ -79,7 +79,60 @@
 })();
 
 // ============================================
-// 3. 底部浮动导航栏（含滚动隐藏）
+// 3. 友情链接列表（从 info/friend.json 生成）
+// ============================================
+(function initFriendList() {
+    var container = document.getElementById('frdlnk-container');
+    if (!container) return;
+
+    fetch('info/friend.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            container.innerHTML = '';   // 清掉占位提示
+
+            var categoryLabel = { 'website': '个人网站', 'bilibili': '哔哩哔哩' };
+
+            Object.keys(data).forEach(function (key) {
+                var item = data[key];
+                if (!item || !item.name) return;
+
+                var div = document.createElement('div');
+                div.className = 'frdlnkdivs';
+
+                var dt = document.createElement('dt');
+                dt.className = 'fldt';
+
+                var img = document.createElement('img');
+                img.src = 'https://q1.qlogo.cn/g?b=qq&nk=' + item.qqid + '&s=640';
+                img.alt = 'QQ头像';
+                img.className = 'qqava';
+                dt.appendChild(img);
+
+                var a = document.createElement('a');
+                a.href = item.link;
+                a.target = '_blank';
+                a.textContent = item.name;
+                dt.appendChild(a);
+
+                var dd = document.createElement('dd');
+                dd.className = 'fldd';
+
+                var label = categoryLabel[item.category] || '其他';
+                var p = document.createElement('p');
+                p.textContent = '（' + label + '）';
+                dd.appendChild(p);
+                dd.appendChild(document.createTextNode(item.description || ''));
+
+                div.appendChild(dt);
+                div.appendChild(dd);
+                container.appendChild(div);
+            });
+        })
+        .catch(function (err) { console.error('友链加载失败:', err); });
+})();
+
+// ============================================
+// 4. 底部浮动导航栏（含滚动隐藏）
 // ============================================
 (function initFooter() {
     fetch('info/info.json')
