@@ -1,0 +1,84 @@
+{
+    "contacts": {
+        "bilibili": {
+            "name": "B站",
+            "text": "@Dan_Evan",
+            "link": "https://space.bilibili.com/642688364",
+            "icon": "icons/social/bilibili.svg"
+        },
+        "weibo": {
+            "name": "微博",
+            "text": "@Dan_Evan",
+            "link": "https://weibo.com/u/5664519001",
+            "icon": "icons/social/weibo.svg"
+        },
+        "github": {
+            "name": "GitHub",
+            "text": "@ElofHew",
+            "link": "https://github.com/ElofHew",
+            "icon": "icons/social/github.svg"
+        },
+        "qqradio": {
+            "name": "QQ频道",
+            "text": "大伊万的神秘频道",
+            "link": "https://pd.qq.com/s/b0nn9lb2p",
+            "icon": "icons/social/qqradio.svg"
+        },
+        "qq": {
+            "name": "QQ",
+            "text": "@Dr.Evan.",
+            "link": "https://qm.qq.com/q/BPdpfotZgQ",
+            "icon": "icons/social/qq.svg"
+        },
+        "wechat": {
+            "name": "微信",
+            "text": "@Evan.",
+            "link": "./img/qrcode/wechat.png",
+            "icon": "icons/social/wechat.svg"
+        },
+        "telegram": {
+            "name": "Telegram",
+            "text": "@ElofHew",
+            "link": "https://t.me/ElofHew",
+            "icon": "icons/social/telegram.svg"
+        },
+        "email1": {
+            "name": "Email(1)",
+            "text": "dan_evan233@outlook.com",
+            "link": "mailto:dan_evan233@outlook.com",
+            "icon": "icons/email1.svg"
+        },
+        "email2": {
+            "name": "Email(2)",
+            "text": "2352235176@qq.com",
+            "link": "mailto:2352235176@qq.com",
+            "icon": "icons/email2.svg"
+        }
+    },
+    "opensource": {
+        "01": {
+            "name": "DE Numguess",
+            "author": "ElofHew",
+            "repo": "https://github.com/ElofHew/DE_numguess",
+            "description": "一个基于Python3的猜数字小游戏",
+            "status": "developing",
+            "languages": "python"
+        },
+        "02": {
+            "name": "RandomCallTool",
+            "author": "ElofHew",
+            "repo": "https://github.com/ElofHew/RandomCallTool",
+            "description": "一个基于Python3+Tkinter的随机抽取工具",
+            "status": "developing",
+            "languages": "python"
+        },
+        "03": {
+            "name": "Quarter OS",
+            "author": "ElofHew",
+            "repo": "https://github.com/ElofHew/QOS",
+            "description": "Pro级的Python伪系统",
+            "status": "archived",
+            "languages": "python"
+        }
+    }
+}

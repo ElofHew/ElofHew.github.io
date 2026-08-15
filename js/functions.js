@@ -172,3 +172,70 @@
         })
         .catch(function (err) { console.error('底部导航栏加载失败:', err); });
 })();
+
+// ============================================
+// 5. 主站信息（联系方式 / 开源项目）从 info/main.json 生成
+// ============================================
+(function initMainInfo() {
+    var contactsEl = document.getElementById('contacts-list');
+    var osEl = document.getElementById('opensource-list');
+    if (!contactsEl && !osEl) return;
+
+    fetch('info/main.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            // 联系方式
+            if (contactsEl && data.contacts) {
+                contactsEl.innerHTML = '';
+                Object.keys(data.contacts).forEach(function (key) {
+                    var c = data.contacts[key];
+                    if (!c || !c.link) return;
+
+                    var li = document.createElement('li');
+                    var img = document.createElement('img');
+                    img.src = c.icon;
+                    img.alt = c.name;
+                    img.className = 'contact-icon';
+                    li.appendChild(img);
+                    li.appendChild(document.createTextNode(' ' + c.name + '：'));
+
+                    var a = document.createElement('a');
+                    a.href = c.link;
+                    a.target = '_blank';
+                    a.textContent = c.text || c.name;
+                    li.appendChild(a);
+
+                    contactsEl.appendChild(li);
+                });
+            }
+
+            // 开源项目（语言图标：icons/language/<languages>.svg）
+            if (osEl && data.opensource) {
+                osEl.innerHTML = '';
+                Object.keys(data.opensource).forEach(function (key) {
+                    var o = data.opensource[key];
+                    if (!o || !o.repo) return;
+
+                    var li = document.createElement('li');
+                    var img = document.createElement('img');
+                    img.src = 'icons/language/' + o.languages + '.svg';
+                    img.alt = o.languages;
+                    img.className = 'lang-icon';
+                    li.appendChild(img);
+                    li.appendChild(document.createTextNode(' '));
+
+                    var a = document.createElement('a');
+                    a.href = o.repo;
+                    a.target = '_blank';
+                    a.textContent = o.name;
+                    li.appendChild(a);
+
+                    li.appendChild(document.createElement('br'));
+                    li.appendChild(document.createTextNode(o.description || ''));
+
+                    osEl.appendChild(li);
+                });
+            }
+        })
+        .catch(function (err) { console.error('主站信息加载失败:', err); });
+})();

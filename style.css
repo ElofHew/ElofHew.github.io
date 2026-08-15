@@ -144,6 +144,15 @@ a:hover {
     height: 30px;
 }
 
+/* 列表内小图标（联系方式 / 开源项目语言图标） */
+.contact-icon,
+.lang-icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
 /* ---------- 板块通用卡片样式 ---------- */
 .block-divs,
 .music-divs,
