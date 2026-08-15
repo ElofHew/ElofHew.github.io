@@ -142,7 +142,7 @@ a:hover {
 /* ---------- 板块通用卡片样式 ---------- */
 .block-divs,
 .music-divs,
-.novel-list-divs,
+.donate-divs,
 .help-div {
     border-radius: 10px;
     padding: 12px;
@@ -163,6 +163,16 @@ a:hover {
 .block-divs h2 {
     font-size: 20px;
     color: lightseagreen;
+}
+
+/* ---------- 赞助块专用 ---------- */
+.donate-divs {
+    background-color: rgba(255,255,255, 0.8);
+    max-width: 800px;
+}
+
+.donate-divs p {
+    text-align: center;
 }
 
 /* ---------- 音乐室专用 ---------- */
@@ -627,11 +637,6 @@ textarea {
     /* 首页 about/contacts/open-source/donate 的中间容器不再单独占格 */
     .tiles .container {
         display: contents;
-    }
-
-    /* 磁贴之间隐藏分隔线 */
-    .tiles hr {
-        display: none;
     }
 
     /* 磁贴内搜索框自适应，避免溢出 */

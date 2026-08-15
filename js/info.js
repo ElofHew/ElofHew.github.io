@@ -95,19 +95,58 @@
 // ============================================
 (function initDonate() {
     var el = document.getElementById("donate-list");
-    if (el) {
-        el.innerHTML =
-            '<table class="cn-table">' +
-            '<caption><b>赞助列表</b></caption>' +
-            '<tbody>' +
-            '<tr><td><b>赞助人</b></td><td><b>时间</b></td><td><b>金额</b></td></tr>' +
-            '<tr><td>lu</td><td>25-02-01</td><td>￥3.09</td></tr>' +
-            '<tr><td>graphic</td><td>25-02-01</td><td>￥1.63</td></tr>' +
-            '<tr><td>lu</td><td>25-01至25-05</td><td>总共16个月QQ超级会员</td></tr>' +
-            '<tr><td>Chiyao6840</td><td>26-08-11</td><td>￥1.11</td></tr>' +
-            '<tr><td>Mr_lbrain</td><td>26-08-13</td><td>￥2.58</td></tr>' +
-            '</tbody></table>';
-    }
+    if (!el) return;
+
+    // 类别翻译：donate=赞助，charge=充电，other 及其他未知值=其他
+    var categoryMap = { 'donate': '赞助', 'charge': '充电' };
+
+    fetch('info/donate.json')
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+            // 依键序（0001、0002...）顺序输出
+            var rows = Object.keys(data).map(function (key) { return data[key]; });
+
+            // 直接收益总计：仅统计 donate 和 charge 类别的数值型 value
+            var total = 0;
+            rows.forEach(function (item) {
+                if (item.category === 'donate' || item.category === 'charge') {
+                    var v = parseFloat(item.value);
+                    if (!isNaN(v)) total += v;
+                }
+            });
+            var totalEl = document.getElementById('donate-total');
+            if (totalEl) {
+                totalEl.innerHTML = '<p><b>直接收益总计：￥' + total.toFixed(2) + '</b></p>';
+            }
+
+            var html = '<table class="cn-table">' +
+                '<caption><b>赞助列表</b></caption>' +
+                '<thead><tr>' +
+                '<th>赞助人</th><th>UID</th><th>时间</th><th>类别</th><th>金额</th><th>备注</th>' +
+                '</tr></thead><tbody>';
+
+            rows.forEach(function (item) {
+                var category = categoryMap[item.category] || '其他';
+                // 仅 charge 类别显示 UID，其余留空
+                var uid = (item.category === 'charge') ? (item.uid || '') : '';
+
+                html += '<tr>' +
+                    '<td>' + (item.name || '') + '</td>' +
+                    '<td>' + uid + '</td>' +
+                    '<td>' + (item.date || '') + '</td>' +
+                    '<td>' + category + '</td>' +
+                    '<td>' + (item.value || '') + '</td>' +
+                    '<td>' + (item.note || '') + '</td>' +
+                    '</tr>';
+            });
+
+            html += '</tbody></table>';
+            el.innerHTML = html;
+        })
+        .catch(function (err) {
+            el.innerHTML = '<p>赞助列表加载失败。</p>';
+            console.error('赞助列表加载失败:', err);
+        });
 })();
 
 // ============================================
