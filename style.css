@@ -660,3 +660,43 @@ textarea {
         width: 320px;
     }
 }
+
+/* ===========================================
+   赞助表格：响应式列隐藏
+   优先级（从重要到次要）：名字/类别/金额 > 日期 > 备注 > UID
+   窗口越窄，依次隐藏 UID → 备注 → 日期，铁三项（名字/类别/金额）始终保留
+   =========================================== */
+/* 赞助表格单元格不强制 635px 宽，避免手机端溢出 */
+.donate-divs .cn-table th,
+.donate-divs .cn-table td {
+    width: auto;
+}
+
+/* 各列最大宽度：名字200 / 时间135 / 类别75 / 金额75 / UID150 / 备注165 */
+.donate-divs .cn-table .col-name  { max-width: 200px; }
+.donate-divs .cn-table .col-date  { max-width: 135px; }
+.donate-divs .cn-table .col-cat   { max-width: 75px;  }
+.donate-divs .cn-table .col-value { max-width: 75px;  }
+.donate-divs .cn-table .col-uid   { max-width: 150px; }
+.donate-divs .cn-table .col-note  { max-width: 165px; }
+
+/* 较窄：隐藏 UID */
+@media (max-width: 991px) {
+    .cn-table .col-uid {
+        display: none;
+    }
+}
+
+/* 更窄：再隐藏 备注 */
+@media (max-width: 767px) {
+    .cn-table .col-note {
+        display: none;
+    }
+}
+
+/* 最窄：再隐藏 日期，只留 铁三项（名字/类别/金额） */
+@media (max-width: 575px) {
+    .cn-table .col-date {
+        display: none;
+    }
+}

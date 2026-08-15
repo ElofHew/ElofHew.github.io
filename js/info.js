@@ -122,7 +122,12 @@
             var html = '<table class="cn-table">' +
                 '<caption><b>赞助列表</b></caption>' +
                 '<thead><tr>' +
-                '<th>赞助人</th><th>UID</th><th>时间</th><th>类别</th><th>金额</th><th>备注</th>' +
+                '<th class="col-name">赞助人</th>' +
+                '<th class="col-uid">UID</th>' +
+                '<th class="col-date">时间</th>' +
+                '<th class="col-cat">类别</th>' +
+                '<th class="col-value">金额</th>' +
+                '<th class="col-note">备注</th>' +
                 '</tr></thead><tbody>';
 
             rows.forEach(function (item) {
@@ -131,12 +136,12 @@
                 var uid = (item.category === 'charge') ? (item.uid || '') : '';
 
                 html += '<tr>' +
-                    '<td>' + (item.name || '') + '</td>' +
-                    '<td>' + uid + '</td>' +
-                    '<td>' + (item.date || '') + '</td>' +
-                    '<td>' + category + '</td>' +
-                    '<td>' + (item.value || '') + '</td>' +
-                    '<td>' + (item.note || '') + '</td>' +
+                    '<td class="col-name">' + (item.name || '') + '</td>' +
+                    '<td class="col-uid">' + uid + '</td>' +
+                    '<td class="col-date">' + (item.date || '') + '</td>' +
+                    '<td class="col-cat">' + category + '</td>' +
+                    '<td class="col-value">' + (item.value || '') + '</td>' +
+                    '<td class="col-note">' + (item.note || '') + '</td>' +
                     '</tr>';
             });
 
