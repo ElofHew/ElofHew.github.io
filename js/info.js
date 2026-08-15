@@ -120,13 +120,14 @@ function initCountdown(cfg) {
         target = new Date(d.year, d.month - 1, d.day, d.hour || 0, d.minute || 0, d.second || 0).getTime();
     }
     var tip = cfg.targetTip || '距离目标时间还有';
+    var successTip = cfg.successTip || '倒计时已完成';
 
     function update() {
         var now = new Date().getTime();
         var dist = target - now;
 
         if (dist < 0) {
-            el.innerHTML = '<b style="color: orangered; text-align: center;">不是哥们你开桂了？</b>';
+            el.innerHTML = '<b style="color: orangered; text-align: center;">' + successTip + '</b>';
             return;
         }
 

@@ -18,6 +18,7 @@
             "minute": 0,
             "second": 0
         },
+        "successTip": "祝我17岁生日快乐！",
         "timezone": ["Asia/Shanghai", "UTC+8"]
     },
     "bottom-button": {
