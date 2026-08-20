@@ -71,14 +71,6 @@
             "description": "一个基于Python3+Tkinter的随机抽取工具",
             "status": "developing",
             "languages": "python"
-        },
-        "03": {
-            "name": "Quarter OS",
-            "author": "ElofHew",
-            "repo": "https://github.com/ElofHew/QOS",
-            "description": "Pro级的Python伪系统",
-            "status": "archived",
-            "languages": "python"
         }
     }
 }
